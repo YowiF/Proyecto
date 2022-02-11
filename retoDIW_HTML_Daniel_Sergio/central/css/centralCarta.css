@@ -1,0 +1,134 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Calibri";
+  background-color: burlywood;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  margin: auto 100px auto 100px;
+}
+#cabecera {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  background-color: rgb(212, 141, 48);
+}
+#bloqueLogoTitulo {
+  display: flex;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+#tituloPagina {
+  text-align: left;
+  flex-grow: 1;
+  margin: 30px;
+  margin-left: 10px;
+  line-height: 50px;
+  text-shadow: 3px 3px 2px #000;
+}
+#navegacion {
+  text-align: center;
+  margin: auto;
+  margin-right: 10px;
+}
+p {
+  padding: 5px;
+  text-align: justify;
+}
+a:not(#tituloFooter)  {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.76);
+}
+#listaNav {
+  list-style-type: none;
+  margin: 10px;
+}
+#celdaNav {
+  margin: 10px;
+  padding: 15px;
+  display: inline;
+  position: relative;
+  font-size: 130%;
+  text-shadow: 3px 3px 2px #000;
+}
+#contenido {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#filaPlato {
+  display: flex;
+  margin: 40px;
+}
+#bloquePlato {
+  display: flex;
+  margin: 10px;
+  flex: 1;
+  background-color: rgb(228, 169, 93);
+}
+#imagenPlato {
+  display: flex;
+  width: auto;
+  height: 200px;
+  margin: 10px;
+}
+#textoPlato {
+  background-color: rgb(212, 141, 48);
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+  flex: 1;
+}
+#footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(212, 141, 48);
+}
+#footerPaginas {
+  display: block;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#tituloFooter {
+  text-decoration: none;
+  color: black;
+}
+#listaFooterPaginas {
+  list-style-type: none;
+  margin: auto;
+}
+#celdaFooterPaginas {
+  margin: 20px;
+}
+#footerRedesSociales {
+  display: block;
+  margin: auto;
+  margin-right: 1000px;
+  margin-top: 20px;
+}
+#listaFooterRedesSociales {
+  display: flex;
+  list-style-type: none;
+  margin-right: 40px;
+}
+.textoencima{
+  position: relative;
+  bottom: 125px;
+  
+  opacity: 0;
+}
