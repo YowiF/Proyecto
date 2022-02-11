@@ -48,35 +48,35 @@ $(document).ready(function(){
     
     function mostrartexto() {
 
-        $(this).css({
-    
-          opacity: "0",
-    
-        });
-    
-        $(this).next().css({
-    
-            opacity: "1",
-    
-        });
-    
-      }
-    
-    
-    
-      function ocultartexto() {
-    
-        $(this).css({
-    
-            opacity: "1",
-    
-        });
-    
-        var d = $(this).next().val();
-    
-        $(this).next().css("opacity", "0");
-    
-      }
+      $(this).css({
+  
+        opacity: "0",
+  
+      });
+  
+      $(this).next().css({
+  
+          opacity: "1",
+  
+      });
+  
+    }
+  
+  
+  
+    function ocultartexto() {
+  
+      $(this).css({
+  
+          opacity: "1",
+  
+      });
+  
+      var d = $(this).next().val();
+  
+      $(this).next().css("opacity", "0");
+  
+    }
         });
         var display = false;
 
