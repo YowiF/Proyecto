@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".imagenplato").hover(mostrartexto,ocultartexto);
+  $(".imagenPlato").hover(mostrartexto,ocultartexto);
   $(".cajas").hover(handleInCajas,handleOutCajas);
   $(".btn").hover(handleInBotones,handleOutBotones);
   $("#celdaNav>a").hover(handleInEnlaces,handleOutEnlaces);
@@ -52,4 +52,3 @@ function mostrartexto(){
   var d=$(this).next().val();
   $(this).next().css("opacity","0");
   }
-    
