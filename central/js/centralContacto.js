@@ -38,17 +38,34 @@ function handleOutEnlaces(){
        "color":"rgba(255,255,255,0.76)"
     });
 }
+function mostrartexto() {
 
-function mostrartexto(){
     $(this).css({
-      opcaity:"0",
-  });
-  $(this).next().css({opacity:"1",});
+
+      opacity: "0",
+
+    });
+
+    $(this).next().css({
+
+        opacity: "1",
+
+    });
+
   }
-  function ocultartexto(){
+
+
+
+  function ocultartexto() {
+
     $(this).css({
-      opcaity:"1",
-  });
-  var d=$(this).next().val();
-  $(this).next().css("opacity","0");
+
+        opacity: "1",
+
+    });
+
+    var d = $(this).next().val();
+
+    $(this).next().css("opacity", "0");
+
   }
