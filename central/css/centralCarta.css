@@ -78,7 +78,7 @@ a:not(#tituloFooter)  {
   flex: 1;
   background-color: rgb(228, 169, 93);
 }
-#imagenPlato {
+.imagenPlato {
   display: flex;
   width: auto;
   height: 200px;
