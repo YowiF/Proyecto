@@ -79,7 +79,7 @@ function mostrartexto() {
 });
 var display = false;
 
-  $(".openNavegacion").click(function () {
+  $("#openNavegacion").click(function () {
   
     if (display == false) {
   
