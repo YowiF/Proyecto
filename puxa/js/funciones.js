@@ -60,4 +60,36 @@ $(document).ready(function(){
       $(this).next().css("opacity","0");
       }
         });
-    
+        var display = false;
+
+        $(".openNavegacion").click(function () {
+        
+          if (display == false) {
+        
+            $("#navegacion").show(
+        
+              function() {
+        
+                $("#navegacion").animate({"width": "250px"}, 100);
+        
+              });
+        
+              display = true;
+        
+          }
+        
+          else {
+        
+            $("#navegacion").hide(
+        
+              function() {
+        
+                $("#navegacion").animate({"width": "0px"}, 100);
+        
+              });
+        
+              display = false;
+        
+          }
+        
+        });
