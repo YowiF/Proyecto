@@ -75,7 +75,9 @@ function mostrartexto() {
     $(this).next().css("opacity", "0");
 
   }
-  var display = false;
+  
+});
+var display = false;
 
   $(".openNavegacion").click(function () {
   
@@ -107,5 +109,4 @@ function mostrartexto() {
   
     }
     
-});
 });
