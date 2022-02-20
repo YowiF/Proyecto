@@ -5,90 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamburguesería 12&12 - Contacto</title>
-    <link rel="stylesheet" href="css/12Contacto.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src=""></script>
+    <link rel="stylesheet" href="css/12Styles.css" />
     
+        <!-- Bootstrap CSS -->
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.
+  2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPv
+  rszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous"
+      />    
   </head>
   <body>
-    <header id="cabecera">
-      <div>
-        <a id="bloqueLogoTitulo" href="index.html">
-          <img id="logo" src="multimedia/12Logo.png" />
-          <h1 id="tituloPagina">
+    <header>
+      <a class="divLogoTitulo" href="12Principal.html">
+          <img class="logo" src="multimedia/12Logo.png" />
+          <h1 class="titulo">
             Hamburguesería 12&12
           </h1>
         </a>
-      </div>
       
-      <nav id="navegacion">
-        <ul id="listaNav">
-          <li id="celdaNav">
+      <nav>
+        <ul class="listaNav">
+          <li class="celdaNav">
             <a href="12Carta.html">Carta</a>
           </li>
-          <li id="celdaNav">
+          <li class="celdaNav">
             <a href="12Reservas.html">Reservas</a>
           </li>
-          <li id="celdaNav">
+          <li class="celdaNav">
             <a href="12Calidad.html">Siente la Calidad</a>
           </li>
-          <li id="celdaNav">
+          <li class="celdaNav">
             <a href="12Contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div id="contenido">
-      <div id="bloqueMapa">
+    <div class="contenido contenidoContacto">
+      <div class="bloqueMapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d723.1636300224554!2d-5.673717070744155!3d43.530396598695354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367cf14bec35cf%3A0xd65e13785d3668ec!2sAv.%20de%20la%20Constituci%C3%B3n%2C%2033208%20Gij%C3%B3n%2C%20Asturias!5e0!3m2!1ses!2ses!4v1637959671998!5m2!1ses!2ses"
          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
       <hr>
 
-      <div id="bloqueInfoForm">
-        <div id="bloqueInfoLocal">
-          <h2 id="tituloInfoLocal">Información Hamburguesería 12&12</h2>
-          <div id="infoLocal">
-            <label id="telefonoLocal">Teléfono del local:<p>985 105 345</p></label>
+      <div class="bloqueInfoForm">
+        <div class="bloqueInfoLocal">
+          <h2 class="tituloInfoLocal">Información Hamburguesería 12&12</h2>
+          <div class="infoLocal">
+            <label class="telefonoLocal">Teléfono del local:<p>985 105 345</p></label>
             
-            <label id="ubicacionLocal">Ubicación del local:<p>Asturias, Gijón, calle Constitución</p></label>
+            <label class="ubicacionLocal">Ubicación del local:<p>Asturias, Gijón, calle Constitución</p></label>
           </div>
         </div>
   
         <hr style="height: 425px;">
 
-        <div id="bloqueFormulario">
+        <div class="bloqueFormulario">
           <h2>Contacto</h2>
           <form name="form" autocomplete="off">
-            <div id="filaForm">
-              <div id="bloqueDatos">
-                <div id="bloqueNombre">
+            <div class="filaForm">
+              <div class="bloqueDatos">
+                <div class="bloqueNombre">
                   <label for="nombre">Nombre y Apellidos</label>
                   </br>
-                  <input type="text" name="nombre" id="nombre" class="cajas">
+                  <input type="text" name="nombre" class="cajas">
                 </div>
-                <div id="bloqueemail">
+                <div class="bloqueemail">
                   <label for="email">Correo electrónico</label>
                   </br>
-                  <input type="email" name="email" id="email" class="cajas">
+                  <input type="email" name="email" class="cajas">
                 </div>
-                <div id="bloquetelefono">
+                <div class="bloquetelefono">
                   <label for="telefono">Teléfono</label>
                   </br>
-                  <input type="text" name="telefono" id="telefono" class="cajas">
+                  <input type="text" name="telefono" class="cajas">
                 </div>
               </div>
-              <div id="bloqueObservaciones">
-                <label id="labelObservaciones" for="observaciones">Observaciones</label>
+              <div class="bloqueObservaciones">
+                <label class="labelObservaciones" for="observaciones">Observaciones</label>
                 </br>
-                <textarea rows="5" cols="45" name="observaciones" id="observaciones" class="cajas"></textarea>
+                <textarea rows="5" cols="45" name="observaciones" class="cajas"></textarea>
               </div>
             </div>
-            <div id="filaForm">
-              <div id="bloquePrivacidad">
-                <input type="checkbox" name="privacidad" id="privacidad">
+            <div class="filaForm">
+              <div class="bloquePrivacidad">
+                <input type="checkbox" name="privacidad" class="privacidad">
                 <label for="privacidad">Política de privacidad</label>
               </div>
               <input type="submit" value="enviar" name="submit" class="btn">
@@ -98,30 +103,30 @@
       </div>
     </div>
 
-    <footer id="footer">
-      <div id="footerPaginas">
-        <a id="tituloFooter" href="12Principal.html">
+    <footer>
+      <div class="footerPaginas">
+        <a class="tituloFooter" href="12Principal.html">
           <h3 style="text-align: center">HAMBURGUESERÍA 12&12</h3>
         </a>
-        <ul id="listaFooterPaginas">
-          <li id="celdaFooterPaginas">
+        <ul class="listaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="12Carta.html">Carta</a>
           </li>
-          <li id="celdaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="12Reservas.html">Reservas</a>
           </li>
-          <li id="celdaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="12Calidad.html">Siente la Calidad</a>
           </li>
-          <li id="celdaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="12Contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
-      <div id="footerRedesSociales">
+      <div class="footerRedesSociales">
         <h3 style="text-align: center">REDES SOCIALES</h3>
-        <ul id="listaFooterRedesSociales">
-          <li id="celdaFooterRedesSociales">
+        <ul class="listaFooterRedesSociales">
+          <li class="celdaFooterRedesSociales">
             <a href="https://www.instagram.com" target="_blank">
               <img
                 src="multimedia/iconoInstagram.png"
@@ -131,7 +136,7 @@
               />
             </a>
           </li>
-          <li id="celdaFooter">
+          <li class="celdaFooter">
             <a href="https://www.twitter.com" target="_blank">
               <img
                 src="multimedia/iconoTwitter.png"
@@ -141,7 +146,7 @@
               />
             </a>
           </li>
-          <li id="celdaFooter">
+          <li class="celdaFooter">
             <a href="https://www.facebook.com" target="_blank">
               <img
                 src="multimedia/iconoFacebook.png"
@@ -155,6 +160,31 @@
       </div>
     </footer>
   </body>
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-K
+  J3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymou
+  s"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.mi
+  n.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpF
+  gh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.m
+  in.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZ
+  flJ"
+      crossorigin="anonymous"
+    ></script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
-  <script src="js/funciones.js" type="text/javascript"></script>
+  <script src="js/12Script.js" type="text/javascript"></script>
 </html>
