@@ -13,7 +13,7 @@ $(document).ready(function () {
   }
   function handleOutCajas() {
     $(this).css({
-      "background-color": "burlywood",
+      "background-color": "rgba(216, 125, 7, 0.829)",
     });
   }
   function handleInBotones() {
