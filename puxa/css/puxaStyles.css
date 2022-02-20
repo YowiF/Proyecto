@@ -1,0 +1,400 @@
+/* SELECTORES GENERALES PIZZAS */
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Calibri";
+  background-color: rgba(61, 121, 176, 0.88);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  margin: auto 100px auto 100px;
+}
+header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  background-color: rgba(116, 181, 31, 0.84);
+}
+.divLogoTitulo {
+  display: inherit;
+}
+.logo {
+  width: 35%;
+  margin: 5px;
+  margin-right: 250px;
+  align-self: center;
+}
+.titulo {
+  text-align: left;
+  flex-grow: 1;
+  margin: 30px;
+  margin-left: 10px;
+  line-height: 50px;
+  text-shadow: 3px 3px 2px #000;
+}
+nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(86, 146, 7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.openNavegacion {
+  margin: 20px 40px 20px 20px;
+  font-size: 40px;
+}
+nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 3px 3px 2px #000;
+  display: block;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #f1f1f1;
+}
+nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.closebtn {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+@media screen and (max-height: 450px) {
+  nav {
+    padding-top: 15px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+}
+p {
+  padding: 5px;
+}
+a:not(.tituloFooter) {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.76);
+}
+.listaNav {
+  list-style-type: none;
+  margin: 10px;
+}
+.celdaNav {
+  margin: 10px;
+  padding: 15px;
+  display: inline;
+  position: relative;
+  font-size: 130%;
+  text-shadow: 3px 3px 2px #000;
+}
+.contenido {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 200%;
+  text-shadow: 3px 3px 2px #000;
+  color: rgba(255, 255, 255, 0.76);
+}
+.bloqueFormulario {
+  background-color: rgba(116, 181, 31, 0.84);
+  padding: 10px 20px 20px 20px;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 20px;
+}
+.filaForm {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 50px auto 50px;
+  padding: 20px;
+}
+.bloqueObservaciones {
+  margin: auto;
+  width: 50%;
+}
+textarea {
+  resize: none;
+}
+.cajas {
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: rgba(116, 181, 31, 0.84);
+  border: 2px solid #fff;
+}
+.btn {
+  height: 40px;
+  padding: 10px 40px;
+  border-radius: 7px;
+  background-color: #000;
+  color: #9abcbd;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(116, 181, 31, 0.84);
+}
+.footerPaginas {
+  display: block;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.tituloFooter {
+  text-decoration: none;
+  color: black;
+}
+.listaFooterPaginas {
+  list-style-type: none;
+  margin: auto;
+}
+.celdaFooterPaginas {
+  margin: 20px;
+}
+.footerRedesSociales {
+  display: block;
+  margin: auto;
+  margin-right: 1000px;
+  margin-top: 20px;
+}
+.listaFooterRedesSociales {
+  display: flex;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+/* SELECTORES PRINCIPAL */
+
+.bloqueMapaNewsMovil {
+  display: flex;
+  flex: 1;
+}
+.bloqueMapa {
+  width: 50%;
+  margin: 20px;
+  margin-left: 100px;
+}
+.mapa {
+  width: 750px;
+  height: 400px;
+  margin: 20px;
+}
+.bloqueNewsMovil {
+  display: block;
+  align-self: center;
+  margin: 40px;
+  margin-right: 150px;
+  text-align: center;
+  width: 50%;
+}
+.bloqueNews {
+  width: 50%;
+  margin: 20px;
+  margin-bottom: 50px;
+  background-color: rgba(110, 172, 30, 0.84);
+  border: black solid 2px;
+  padding: 0 20px 0 20px;
+}
+.bloqueMovil {
+  display: flex;
+  margin: 20px;
+  margin-top: 150px;
+  background-color: white;
+  width: fit-content;
+  border: rgba(116, 181, 31, 0.84) solid 2px;
+}
+.imagenMovil {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.labelMovil {
+  align-self: center;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 150%;
+  margin-right: 10px;
+}
+
+/* SELECTORES CARTA */
+
+.filaPlato {
+  display: flex;
+  margin: 40px;
+  color: rgba(255, 255, 255, 0.76);
+}
+.bloquePlato {
+  display: flex;
+  margin: 10px;
+  flex: 1;
+  background-color: rgba(61, 121, 176, 0.88);
+}
+.imagenPlato {
+  display: flex;
+  width: auto;
+  height: 200px;
+  margin: 10px;
+}
+.textoPlato {
+  background-color: rgba(87, 150, 209, 0.88);
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  text-align: justify;
+  flex: 1;
+}
+.txtImg {
+  position: relative;
+  bottom: 125px;
+  opacity: 0;
+}
+
+/* SELECTORES PEDIDOS */
+
+.contenidoPedidos {
+  display: block;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+  padding: 30px;
+}
+.bloquePlatosForm {
+  color: rgba(255, 255, 255, 0.76);
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 20px 20px 20px;
+}
+.bloquePlatos {
+  display: block;
+  width: 50%;
+  height: auto;
+  background-color: rgba(116, 181, 31, 0.84);
+  padding: 10px 20px 20px 20px;
+}
+.titulosPlatos {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.filaPlatos {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 20px 20px;
+  text-align: left;
+  height: 74%;
+}
+.platos {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.76);
+}
+.bloquePrecioTotal {
+  margin: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+.bloqueDatosIzda {
+  display: block;
+  align-self: center;
+  width: 50%;
+  margin: 20px;
+}
+.bloqueDatosDcha {
+  display: block;
+  width: 50%;
+  margin: 20px;
+}
+.bloqueCeliacos {
+  margin-top: 20px;
+}
+.bloqueObservacionesPedidos {
+  margin-top: 30px;
+}
+
+/* SELECTORES PROMOCIONES */
+
+.contenidoPromociones {
+  width: 50%;
+  margin: 20px auto 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+  padding: 30px;
+}
+.bloqueTituloPromociones {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgb(86, 146, 7);
+}
+.bloquePromociones {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.promociones {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  background-color: steelblue;
+  text-shadow: 3px 3px 2px #000;
+  border: solid black 2px;
+}
+.textosPromociones {
+  text-align: center;
+  font-weight: bold;
+  font-size: 140%;
+  color: rgba(255, 255, 255, 0.76);
+}
+.bloquePromoMovil {
+  display: block;
+}
+
+/* SELECTORES CONTACTO */
+
+.contenidoContacto {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+  padding: 30px;
+}
+.bloqueInfoForm {
+  color: rgba(255, 255, 255, 0.76);
+  display: flex;
+  margin: 40px 20px 20px 20px;
+}
+.bloqueInfoLocal {
+  display: block;
+  width: 50%;
+  height: auto;
+  background-color: rgba(116, 181, 31, 0.84);
+  padding: 10px 20px 20px 20px;
+}
+.infoLocal {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 20px 20px;
+  text-align: left;
+  height: 74%;
+}
