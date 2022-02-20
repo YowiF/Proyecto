@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzas del Pueblu - Promociones</title>
-    <link rel="stylesheet" href="css/pizzasPromociones.css" />
+    <link rel="stylesheet" href="css/pizzasStyles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.
+    2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPv
+    rszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
-    <header id="cabecera">
-      <h1 id="tituloPagina">
-        <a href="index.html">Pizzas del Pueblu</a>
+    <header class="cabecera">
+      <h1 class="titulo">
+        <a href="pizzasPrincipal.html">Pizzas del Pueblu</a>
       </h1>
-      <a id="logo" href="index.html">
+      <a class="logo" href="pizzasPrincipal.html">
         <img src="multimedia/pizzasLogo.png" />
       </a>
 
-      <span class="openNavegacion" style="cursor: pointer">&#9776;</span
-      >
-      <nav id="navegacion">
-        <a href="javascript:void(0)" class="closebtn  openNavegacion" 
-          >&times;</a
-        >
+      <span class="openNavegacion" style="cursor: pointer">&#9776;</span>
+      <nav class="navegacion">
+        <a href="javascript:void(0)" class="closebtn openNavegacion">&times;</a>
         <a href="pizzasCarta.html">Carta</a>
         <a href="pizzasPedidos.html">Pedidos</a>
         <a href="pizzasPromociones.html">Promociones</a>
@@ -29,27 +37,36 @@
       </nav>
     </header>
 
-    <div id="contenido">
-      <div id="bloqueTituloPromociones">
+    <div class="contenido">
+      <div class="bloqueTituloPromociones">
         <h2 style="padding-top: 40px">Promociones</h2>
-        <div id="bloquePromociones">
+        <div class="bloquePromociones">
           <div class="promociones">
-            <img class="imagenesPromociones" src="multimedia/pizzasImagenPromocion1.png" />
+            <img
+              class="imagenesPromociones"
+              src="multimedia/pizzasImagenPromocion1.png"
+            />
             <p class="textosPromociones">15% descuento</p>
           </div>
           <div class="promociones">
-            <img class="imagenesPromociones" src="multimedia/pizzasImagenPromocion2.png" />
+            <img
+              class="imagenesPromociones"
+              src="multimedia/pizzasImagenPromocion2.png"
+            />
             <p class="textosPromociones">20% descuento</p>
           </div>
-          <div id="bloquePromoMovil">
+          <div class="bloquePromoMovil">
             <div class="promociones">
-              <img class="imagenesPromociones" src="multimedia/pizzasImagenPromocion3.png" />
+              <img
+                class="imagenesPromociones"
+                src="multimedia/pizzasImagenPromocion3.png"
+              />
               <p class="textosPromociones">5% descuento</p>
             </div>
             <div>
-              <a id="bloqueMovil" href="puxaPedidos.html">
-                <img id="imagenMovil" src="multimedia/imagenMovil.jpg" />
-                <label id="labelMovil">¡LLAME O PIDA ONLINE YA!</label>
+              <a class="bloqueMovil" href="puxaPedidos.html">
+                <img class="imagenMovil" src="multimedia/imagenMovil.jpg" />
+                <label class="labelMovil">¡LLAME O PIDA ONLINE YA!</label>
               </a>
             </div>
           </div>
@@ -57,30 +74,30 @@
       </div>
     </div>
 
-    <footer id="footer">
-      <div id="footerPaginas">
-        <a id="tituloFooter" href="pizzasPrincipal.html">
+    <footer class="footer">
+      <div class="footerPaginas">
+        <a class="tituloFooter" href="pizzasPrincipal.html">
           <h3 style="text-align: center">PIZZAS DEL PUEBLU</h3>
         </a>
-        <ul id="listaFooterPaginas">
-          <li id="celdaFooterPaginas">
+        <ul class="listaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="pizzasCarta.html">Carta</a>
           </li>
-          <li id="celdaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="pizzasPedidos.html">Pedidos</a>
           </li>
-          <li id="celdaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="pizzasPromociones.html">Promociones</a>
           </li>
-          <li id="celdaFooterPaginas">
+          <li class="celdaFooterPaginas">
             <a href="pizzasContacto.html">Contacto</a>
           </li>
         </ul>
       </div>
-      <div id="footerRedesSociales">
+      <div class="footerRedesSociales">
         <h3 style="text-align: center">REDES SOCIALES</h3>
-        <ul id="listaFooterRedesSociales">
-          <li id="celdaFooterRedesSociales">
+        <ul class="listaFooterRedesSociales">
+          <li class="celdaFooterRedesSociales">
             <a href="https://www.instagram.com" target="_blank">
               <img
                 src="multimedia/iconoInstagram.png"
@@ -90,7 +107,7 @@
               />
             </a>
           </li>
-          <li id="celdaFooter">
+          <li class="celdaFooter">
             <a href="https://www.twitter.com" target="_blank">
               <img
                 src="multimedia/iconoTwitter.png"
@@ -100,7 +117,7 @@
               />
             </a>
           </li>
-          <li id="celdaFooter">
+          <li class="celdaFooter">
             <a href="https://www.facebook.com" target="_blank">
               <img
                 src="multimedia/iconoFacebook.png"
@@ -113,18 +130,35 @@
         </ul>
       </div>
     </footer>
-
-    <script>
-      function openNav() {
-        document.getElementById("navegacion").style.width = "250px";
-        document.getElementById("navegacion").style.borderLeft = "solid 2px black";
-      }
-
-      function closeNav() {
-        document.getElementById("navegacion").style.width = "0";
-      }
-    </script>
   </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
-  <script src="js/funciones.js" type="text/javascript"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-K
+  J3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymou
+  s"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.mi
+  n.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpF
+  gh"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.m
+  in.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZ
+  flJ"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    type="text/javascript"
+  ></script>
+  <script src="js/pizzasScript.js" type="text/javascript"></script>
 </html>
