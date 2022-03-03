@@ -1,351 +1,336 @@
 /* SELECTORES GENERALES 12 */
 
 html {
-    width: 100%;
-    height: 100%;
-    font-family: "Calibri";
-    background-color: rgba(245, 174, 43, 0.918);
-  }
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  hr {
-    margin: auto 100px auto 100px;
-  }
-  header {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    background-color: rgba(216, 125, 7, 0.829);
-  }
-  .divLogoTitulo {
-    display: inherit;
-  }
-  .logo {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-  }
-  .titulo {
-    text-align: left;
-    flex-grow: 1;
-    margin: 30px;
-    margin-left: 10px;
-    line-height: 50px;
-    text-shadow: 3px 3px 2px #000;
-  }
-  nav {
-    text-align: center;
-    margin: auto;
-    margin-right: 10px;
-  }
-  p {
-    padding: 5px;
-  }
-  a:not(.tituloFooter) {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px;
-    color: rgba(255, 255, 255, 0.76);
-  }
-  .listaNav {
-    list-style-type: none;
-    margin: 10px;
-  }
-  .celdaNav {
-    margin: 10px;
-    padding: 15px;
-    display: inline;
-    position: relative;
-    font-size: 130%;
-    text-shadow: 3px 3px 2px #000;
-  }
-  .contenido {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  h2 {
-    font-size: 200%;
-    text-shadow: 3px 3px 2px #000;
-  }
-  .bloqueFormulario {
-    background-color: rgb(219, 107, 42);
-    padding: 10px 20px 20px 20px;
-  }
-  form {
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: left;
-    padding: 20px;
-  }
-  .filaForm {
-    display: flex;
-    justify-content: space-between;
-    margin: auto 50px auto 50px;
-    padding: 20px;
-  }
-  .bloqueObservaciones {
-    margin: auto;
-    width: 50%;
-  }
-  textarea {
-    resize: none;
-  }
-  .cajas {
-    border-radius: 5px;
-    margin: 15px 0;
-    background-color: rgba(216, 125, 7, 0.829);
-    border: 2px solid #fff;
-  }
-  .btn {
-    height: 40px;
-    padding: 10px 40px;
-    border-radius: 7px;
-    background-color: #000;
-    color: #9abcbd;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 0;
-  }
-  footer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: rgba(216, 125, 7, 0.829);
-  }
-  .footerPaginas {
-    display: block;
-    margin: auto;
-    margin-left: 100px;
-    margin-top: 20px;
-  }
-  .tituloFooter {
-    text-decoration: none;
-    color: black;
-  }
-  .listaFooterPaginas {
-    list-style-type: none;
-    margin: auto;
-  }
-  .celdaFooterPaginas {
-    margin: 20px;
-  }
-  .footerRedesSociales {
-    display: block;
-    margin: auto;
-    margin-right: 1000px;
-    margin-top: 20px;
-  }
-  .listaFooterRedesSociales {
-    display: flex;
-    list-style-type: none;
-    margin-right: 40px;
-  }
-  
-  /* SELECTORES PRINCIPAL */
-  
-  .videoFondo {
-    display: block;
-    margin: 20px 50px 20px 50px;
-  }
-  .divTxt {
-    background-color: black;
-    border: solid 3px gray;
-    
-    display: block;
-    margin: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    width: 750px;
-    padding: 20px;
-  }
-  .divSlidersBtn {
-    display: flex;
-    flex-grow: 2;
-    margin: 40px;
-    justify-content: center;
-  }
-  .sliderPlatos {
-    display: flex;
-    max-width: 500px;
-    position: relative;
-    margin: 20px;
-  }
-  .sliderImagen {
-    width: 280px;
-    height: 200px;
-  }
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-  .dot2 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .active2,
-  .dot2:hover {
-    background-color: #717171;
-  }
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  button {
-    margin: 95px;
-    padding: 7px 40px;
-    height: 40px;
-    border-radius: 7px;
-    background-color: #000;
-    color: #9abcbd;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 0;
-  }
-  button:hover {
-    box-shadow: 3px 3px 5px #000;
-    background-color: rgba(216, 125, 7, 0.829);
-    color: #000;
-  }
-  
-  /* SELECTORES CARTA */
-  
-  .filaPlato {
-    display: flex;
-    margin: 40px;
-  }
-  .bloquePlato {
-    display: flex;
-    margin: 10px;
-    flex: 1;
-    background-color: rgb(219, 107, 42);
-  }
-  .imagenPlato {
-    display: flex;
-    width: auto;
-    height: 200px;
-    margin: 10px;
-  }
-  .textoPlato {
-    background-color: rgba(216, 125, 7, 0.829);
-    width: fit-content;
-    margin: 10px;
-    padding: 10px;
-    flex: 1;
-  }
-  .txtImg {
-    position: relative;
-    bottom: 125px;
-    opacity: 0;
-  }
-  
-  /* SELECTORES RESERVAS */
-  
-  .contenidoReservas {
-    width: 50%;
-    margin: 20px auto 20px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.76);
-    padding: 30px;
-  }
-  .celiacos,
-  .privacidad {
-    margin-right: 5px;
-  }
-  
-  /* SELECTORES CALIDAD */
-  
-  .contenidoCalidad {
-    width: 50%;
-    margin: 20px auto 20px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.76);
-    padding: 30px;
-  }
-  .bloqueTituloInfoNutricional {
-    background-color: rgb(219, 107, 42);
-    padding: 10px 20px 20px 20px;
-  }
-  .imagenInfoNutricional {
-    display: block;
-    width: 90%;
-    height: 90%;
-    margin: 20px auto 20px;
-  }
-  
-  /* SELECTORES CONTACTO */
-  
-  .contenidoContacto {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.76);
-    padding: 30px;
-  }
-  .bloqueMapa {
-    background-color: rgb(219, 107, 42);
-    margin: 20px 20px 40px 20px;
-    padding: 40px;
-  }
-  iframe {
-    width: 100%;
-  }
-  .bloqueInfoForm {
-    display: flex;
-    margin: 40px 20px 20px 20px;
-  }
-  .bloqueInfoLocal {
-    display: block;
-    width: 50%;
-    height: auto;
-    background-color: rgb(219, 107, 42);
-    padding: 10px 20px 20px 20px;
-  }
-  .infoLocal {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px 20px 20px;
-    text-align: left;
-    height: 74%;
-  }
-  
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: rgba(245, 174, 43, 0.918);
+  font-family: "Calibri";
+  margin: 0;
+  padding: 0;
+}
+hr {
+  margin: auto 100px auto 100px;
+}
+header {
+  background-color: rgba(216, 125, 7, 0.829);
+}
+.divLogoTitulo {
+  display: flex;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.titulo {
+  text-align: left;
+  flex-grow: 1;
+  margin: 30px;
+  margin-left: 10px;
+  line-height: 50px;
+  text-shadow: 3px 3px 2px #000;
+}
+nav {
+  text-align: center;
+}
+p {
+  padding: 5px;
+}
+a:not(.tituloFooter) {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.76);
+}
+.listaNav {
+  list-style-type: none;
+  margin: 10px;
+}
+.celdaNav {
+  margin: 10px;
+  padding: 15px;
+  display: inline;
+  position: relative;
+  font-size: 130%;
+  text-shadow: 3px 3px 2px #000;
+}
+.contenido {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 200%;
+  text-shadow: 3px 3px 2px #000;
+}
+.bloqueFormulario {
+  background-color: rgb(219, 107, 42);
+  padding: 10px 20px 20px 20px;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 20px;
+}
+.filaForm {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 50px auto 50px;
+  padding: 20px;
+}
+.bloqueObservaciones {
+  margin: auto;
+  width: 50%;
+}
+textarea {
+  resize: none;
+}
+.cajas {
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: rgba(216, 125, 7, 0.829);
+  border: 2px solid #fff;
+}
+.btn {
+  height: 40px;
+  padding: 10px 40px;
+  border-radius: 7px;
+  background-color: #000;
+  color: #9abcbd;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(216, 125, 7, 0.829);
+}
+.footerPaginas {
+  display: block;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.tituloFooter {
+  text-decoration: none;
+  color: black;
+}
+.listaFooterPaginas {
+  list-style-type: none;
+  margin: auto;
+}
+.celdaFooterPaginas {
+  margin: 20px;
+}
+.footerRedesSociales {
+  display: block;
+  margin: auto;
+  margin-right: 1000px;
+  margin-top: 20px;
+}
+.listaFooterRedesSociales {
+  display: flex;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+/* SELECTORES PRINCIPAL */
+
+.videoFondo {
+  display: block;
+  margin: 20px 50px 20px 50px;
+}
+.divTxt {
+  background-color: black;
+  border: solid 3px gray;
+
+  display: block;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  width: 750px;
+  padding: 20px;
+}
+.divSlidersBtn {
+  margin: 20px;
+}
+.sliderPlatos {
+  display: flex;
+  max-width: 300px;
+  position: relative;
+  margin: 10px;
+}
+.sliderImagen {
+  width: 280px;
+  height: 200px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active2,
+.dot2:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+button {
+  margin: 95px;
+  padding: 7px 40px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #000;
+  color: #9abcbd;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+}
+button:hover {
+  box-shadow: 3px 3px 5px #000;
+  background-color: rgba(216, 125, 7, 0.829);
+  color: #000;
+}
+
+/* SELECTORES CARTA */
+
+.filaPlato {
+  margin: 40px;
+}
+.bloquePlato {
+  margin: 10px;
+  background-color: rgb(219, 107, 42);
+}
+.imagenPlato {
+  width: auto;
+  height: 200px;
+  margin: 10px;
+}
+.textoPlato {
+  background-color: rgba(216, 125, 7, 0.829);
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+}
+.txtImg {
+  position: relative;
+  bottom: 125px;
+  opacity: 0;
+}
+
+/* SELECTORES RESERVAS */
+
+.contenidoReservas {
+  width: 50%;
+  margin: 20px auto 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+  padding: 30px;
+}
+.celiacos,
+.privacidad {
+  margin-right: 5px;
+}
+
+/* SELECTORES CALIDAD */
+
+.contenidoCalidad {
+  width: 50%;
+  margin: 20px auto 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+  padding: 30px;
+}
+.bloqueTituloInfoNutricional {
+  background-color: rgb(219, 107, 42);
+  padding: 10px 20px 20px 20px;
+}
+.imagenInfoNutricional {
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin: 20px auto 20px;
+}
+
+/* SELECTORES CONTACTO */
+
+.contenidoContacto {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+  padding: 30px;
+}
+.bloqueMapa {
+  background-color: rgb(219, 107, 42);
+  margin: 20px 20px 40px 20px;
+  padding: 40px;
+}
+iframe {
+  width: 100%;
+}
+.bloqueInfoForm {
+  display: flex;
+  margin: 40px 20px 20px 20px;
+}
+.bloqueInfoLocal {
+  display: block;
+  width: 50%;
+  height: auto;
+  background-color: rgb(219, 107, 42);
+  padding: 10px 20px 20px 20px;
+}
+.infoLocal {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px 20px 20px;
+  text-align: left;
+  height: 74%;
+}
