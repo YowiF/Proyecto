@@ -3,81 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hamburguesería 12&12 - Inicio</title>
-    <link rel="stylesheet" href="css/12Principal.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-   
-  </head>
-  <body>
-    <header id="cabecera">
-      <div>
-        <a id="bloqueLogoTitulo" href="index.html">
-          <img id="logo" src="multimedia/12Logo.png" />
-          <h1 id="tituloPagina">
-            Hamburguesería 12&12
-          </h1>
-        </a>
-      </div>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Bar la Central - Inicio</title>
+    <link rel="stylesheet" href="css/centralStyles.css" />
 
-      <nav id="navegacion">
-        <ul id="listaNav">
-          <li id="celdaNav">
-            <a href="12Carta.html">Carta</a>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.
+2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPv
+rszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a class="divLogoTitulo" href="centralPrincipal.html">
+        <img class="logo" src="multimedia/CentralLogo.png" />
+        <h1 class="titulo">Bar la Central</h1>
+      </a>
+
+      <nav>
+        <ul class="listaNav">
+          <li class="celdaNav">
+            <a href="centralCarta.html">Carta</a>
           </li>
-          <li id="celdaNav">
-            <a href="12Reservas.html">Reservas</a>
+          <li class="celdaNav">
+            <a href="centralReservas.html">Reservas</a>
           </li>
-          <li id="celdaNav">
-            <a href="12Calidad.html">Siente la Calidad</a>
+          <li class="celdaNav">
+            <a href="centralInfoNutricional.html">Información Nutricional</a>
           </li>
-          <li id="celdaNav">
-            <a href="12Contacto.html">Contacto</a>
+          <li class="celdaNav">
+            <a href="centralContacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div id="contenido">
-      <div id="videoFondo">
+    <div class="contenido">
+      <div class="videoFondo">
         <video width="100%" height="100%" autoplay muted loop>
-          <source src="12Video.mp4" type="video/mp4" />
+          <source src="multimedia/centralPrincipalVideo.mp4" type="video/mp4" />
         </video>
       </div>
 
       <hr />
 
-      <div id="entradaTexto">
-        <h2 style="text-align: left; color: white">Fiesta de disfraces</h2>
+      <div class="divTxt">
+        <h2 style="text-align: left; color: white">
+          Fin de semana de pulpo a feira
+        </h2>
         <div style="text-align: justify; color: gray">
           <span
-            >Publicada el 23 de noviembre de 2021 | Publicada por
-            Haumburguesería 12&12</span
-          >
+            >Publicada el 23 de noviembre de 2021 | Publicada por la Central
+          </span>
           <p>
-            Este fin de semana trae a tus pequeños a nuestra fiesta de disfraces
-            con juegos infantiles, pintacaras y merienda-cena, tanto el viernes
-            como el sábado (dos menús diferentes) por tan sólo 25€.
+            Este fin de semana (Viernes: cenas; Sábados: comidas y cenas;
+            Domingos: comidas) estará con nosotros nuestro pulpeiro favorito:
+            Alfonso, que viene desde galicia para deleitarnos con su pulpo a
+            feira, su jamón cocido y sus excelentes cachelos cocidos con
+            pimentón de la Vera.
           </p>
-          <p>"Haumburguesería 12&12"</p>
+          <p>"Bar la Central"</p>
         </div>
       </div>
 
-      <hr>
+      <hr />
 
-      <div id="sliders_botonReserva">
-        <div id="sliderPlatos_tresPuntos">
-          <div id="sliderPlatos">
+      <div class="divSlidersBtn">
+        <div>
+          <div class="sliderPlatos">
             <div class="mySlides fade">
-              <img id="sliderImagen" src="multimedia/12Promo1.jpg" />
+              <img class="sliderImagen" src="multimedia/CentralSlider1.jpg" />
             </div>
 
             <div class="mySlides fade">
-              <img id="sliderImagen" src="multimedia/12Slider2.PNG" />
+              <img class="sliderImagen" src="multimedia/CentralSlider2.jpg" />
             </div>
 
             <div class="mySlides fade">
-              <img id="sliderImagen" src="multimedia/12Slider3.PNG" />
+              <img class="sliderImagen" src="multimedia/CentralSlider3.jpg" />
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -91,24 +102,24 @@
           </div>
         </div>
 
-        <div id="botonReserva">
+        <div class="botonReserva">
           <button type="button">
-            <a href="12Reservas.html" style="color: white">¡RESERVA YA!</a>
+            <a href="centralReservas.html" style="color: white">¡RESERVA YA!</a>
           </button>
         </div>
 
-        <div id="sliderPlatos_tresPuntos">
-          <div id="sliderPlatos">
+        <div>
+          <div class="sliderPlatos">
             <div class="mySlides2 fade">
-              <img id="sliderImagen" src="multimedia/12Slider4.PNG" />
+              <img class="sliderImagen" src="multimedia/CentralSlider4.jpg" />
             </div>
 
             <div class="mySlides2 fade">
-              <img id="sliderImagen" src="multimedia/12Slider4.PNG" />
+              <img class="sliderImagen" src="multimedia/CentralSlider5.jpg" />
             </div>
 
             <div class="mySlides2 fade">
-              <img id="sliderImagen" src="multimedia/12Slider6.jpg" />
+              <img class="sliderImagen" src="multimedia/CentralSlider6.jpg" />
             </div>
 
             <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
@@ -123,30 +134,31 @@
         </div>
       </div>
     </div>
-    <footer id="footer">
-      <div id="footerPaginas">
-        <a id="tituloFooter" href="12Principal.html">
-          <h3 style="text-align: center">HAMBURGUESERÍA 12&12</h3>
+    
+    <footer>
+      <div class="footerPaginas">
+        <a class="tituloFooter" href="centralPrincipal.html">
+          <h3 style="text-align: center">BAR LA CENTRAL</h3>
         </a>
-        <ul id="listaFooterPaginas">
-          <li id="celdaFooterPaginas">
-            <a href="12Carta.html">Carta</a>
+        <ul class="listaFooterPaginas">
+          <li class="celdaFooterPaginas">
+            <a href="centralCarta.html">Carta</a>
           </li>
-          <li id="celdaFooterPaginas">
-            <a href="12Reservas.html">Reservas</a>
+          <li class="celdaFooterPaginas">
+            <a href="centralReservas.html">Reservas</a>
           </li>
-          <li id="celdaFooterPaginas">
-            <a href="12Calidad.html">Siente la Calidad</a>
+          <li class="celdaFooterPaginas">
+            <a href="centralInfoNutricional.html">Información Nutricional</a>
           </li>
-          <li id="celdaFooterPaginas">
-            <a href="12Contacto.html">Contacto</a>
+          <li class="celdaFooterPaginas">
+            <a href="centralContacto.html">Contacto</a>
           </li>
         </ul>
       </div>
-      <div id="footerRedesSociales">
+      <div class="footerRedesSociales">
         <h3 style="text-align: center">REDES SOCIALES</h3>
-        <ul id="listaFooterRedesSociales">
-          <li id="celdaFooterRedesSociales">
+        <ul class="listaFooterRedesSociales">
+          <li class="celdaFooterRedesSociales">
             <a href="https://www.instagram.com" target="_blank">
               <img
                 src="multimedia/iconoInstagram.png"
@@ -156,7 +168,7 @@
               />
             </a>
           </li>
-          <li id="celdaFooter">
+          <li class="celdaFooter">
             <a href="https://www.twitter.com" target="_blank">
               <img
                 src="multimedia/iconoTwitter.png"
@@ -166,7 +178,7 @@
               />
             </a>
           </li>
-          <li id="celdaFooter">
+          <li class="celdaFooter">
             <a href="https://www.facebook.com" target="_blank">
               <img
                 src="multimedia/iconoFacebook.png"
@@ -243,7 +255,35 @@
         dots[slideIndex2 - 1].className += " active2";
       }
     </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-K
+  J3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymou
+  s"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.mi
+  n.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpF
+  gh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.m
+  in.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZ
+  flJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      type="text/javascript"
+    ></script>
+    <script src="js/centralScript.js" type="text/javascript"></script>
   </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
-  <script src="js/funciones.js" type="text/javascript"></script>
 </html>
