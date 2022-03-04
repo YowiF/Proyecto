@@ -13,7 +13,7 @@ function handleInCajas() {
 }
 function handleOutCajas() {
   $(this).css({
-    "background-color": "rgba(116, 181, 31, 0.84)",
+    "background-color": "rgba(68, 112, 11, 0.753)",
   });
 }
 function handleInBotones() {
