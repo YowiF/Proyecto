@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamburguesería 12&12 - Reservas</title>
-    
-        <!-- Bootstrap CSS -->
-        <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous"
-      />
-      
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/12Styles.css" />
   </head>
   <body>
-    <header>
+    <header class="container-fluid">
       <nav class="navegacion navbar navbar-expand-lg navbar-dark">
         <a class="divLogoTitulo navbar-brand" href="12Principal.html">
           <img class="logo" src="multimedia/12Logo.png" alt="12Logo" />
           <h1 class="titulo">Hamburguesería 12&12</h1>
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -56,114 +57,183 @@
     <div class="contenido contenidoReservas">
       <div class="bloqueFormulario">
         <h2>Reserva</h2>
-        <form name="form" autocomplete="off">
-          <div class="filaForm">
-            <div class="bloqueNombre">
-              <label for="nombre">Nombre y Apellidos</label>
-              </br>
-              <input type="text" id="nombre" name="nombre" class="cajas">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationTooltip01">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationTooltip01"
+                placeholder="Daniel"
+                required
+              />
             </div>
-            <div class="bloqueComensales">
-              <label for="numComensales">Número de Comensales</label>
-              </br>
-              <input type="number" id="numComensales" name="numComensales" class="cajas numComensales">
+
+            <div class="col-md-4 mb-3">
+              <label for="validationTooltip02">Apellidos</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationTooltip02"
+                placeholder="García Castro"
+                required
+              />
             </div>
-            <div class="bloqueemail">
-              <label for="email">Correo electrónico</label>
-              </br>
-              <input type="email" id="email" name="email" class="cajas">
-            </div>
-          </div>
-          <div class="filaForm">
-            <div class="bloquetelefono">
-              <label for="telefono">Teléfono</label>
-              </br>
-              <input type="text" id="telefono" name="telefono" class="cajas">
-            </div>
-            <div class="bloqueCeliacos">
-              <input type="checkbox" id="celiacos" name="celiacos" class="celiacos">
-              <label for="celiacos">Comida para celiacos</label>
-            </div>
-            <div class="bloquefecha">
-              <label for="fecha">Fecha y hora de llegada</label>
-              </br>
-              <input type="datetime-local" id="fecha" name="fecha" class="cajas">
-            </div>
-          </div>
-          <div class="filaForm">
-            <div class="bloqueObservaciones">
-              <label class="labelObservaciones" for="observaciones">Observaciones</label>
-              </br>
-              <textarea rows="5" cols="45" id="observaciones" name="observaciones" class="cajas"></textarea>
+
+            <div class="col-md-4 mb-3">
+              <label for="validationTooltipUsername"
+                >Número de Comensales</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationTooltipUsername"
+                placeholder="4"
+                aria-describedby="validationTooltipUsernamePrepend"
+                required
+              />
             </div>
           </div>
-          <div class="filaForm">
-            <div class="bloquePrivacidad">
-              <input type="checkbox" id="privacidad" name="privacidad" class="privacidad">
-              <label for="privacidad">Política de privacidad</label>
+
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip03">Correo electrónico</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationTooltip03"
+                placeholder="danielgarciacastro8@gmail.com"
+                required
+              />
             </div>
-            <input type="submit" value="enviar" name="submit" class="btn">
+
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip04">Teléfono</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationTooltip04"
+                placeholder="684248283"
+                required
+              />
+            </div>
           </div>
-    </form>
-  </div>
+
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <div class="input-group date" id="datetimepicker1">
+                <label for="datepicker">Fecha de Reserva</label>
+                <input type="text" class="form-control" id="datepicker" />
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkCeliacos"
+                />
+                <label class="form-check-label" for="checkCeliacos">
+                  Comida para celiacos
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkPrivacidad"
+                />
+                <label class="form-check-label" for="checkPrivacidad">
+                  Política de privacidad
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-12 offset-lg-3 col-lg-6 offset-lg-3 mb-3">
+              <label for="validationTooltip05">Observaciones</label>
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+                placeholder="Escriba sus observaciones ..."
+              ></textarea>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="m-auto mb-3">
+              <input type="button" class="btn btn-primary" value="ENVIAR" />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
 
     <footer>
-        <div class="footerPaginas">
-          <a class="tituloFooter" href="12Principal.html">
-            <h3 style="text-align: center">HAMBURGUESERÍA 12&12</h3>
-          </a>
-          <ul class="listaFooterPaginas">
-            <li class="celdaFooterPaginas">
-              <a href="12Carta.html">Carta</a>
-            </li>
-            <li class="celdaFooterPaginas">
-              <a href="12Reservas.html">Reservas</a>
-            </li>
-            <li class="celdaFooterPaginas">
-              <a href="12Calidad.html">Siente la Calidad</a>
-            </li>
-            <li class="celdaFooterPaginas">
-              <a href="12Contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footerRedesSociales">
-          <h3 style="text-align: center">REDES SOCIALES</h3>
-          <ul class="listaFooterRedesSociales">
-            <li class="celdaFooterRedesSociales">
-              <a href="https://www.instagram.com" target="_blank">
-                <img
-                  src="multimedia/iconoInstagram.png"
-                  width="25px"
-                  alt="iconoInstagram"
-                  title="Instagram"
-                />
-              </a>
-            </li>
-            <li class="celdaFooter">
-              <a href="https://www.twitter.com" target="_blank">
-                <img
-                  src="multimedia/iconoTwitter.png"
-                  width="25px"
-                  alt="iconoTwitter"
-                  title="Twitter"
-                />
-              </a>
-            </li>
-            <li class="celdaFooter">
-              <a href="https://www.facebook.com" target="_blank">
-                <img
-                  src="multimedia/iconoFacebook.png"
-                  width="25px"
-                  alt="iconoFacebook"
-                  title="Facebook"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <div class="footerPaginas">
+        <a class="tituloFooter" href="12Principal.html">
+          <h3 style="text-align: center">HAMBURGUESERÍA 12&12</h3>
+        </a>
+        <ul class="listaFooterPaginas">
+          <li class="celdaFooterPaginas">
+            <a href="12Carta.html">Carta</a>
+          </li>
+          <li class="celdaFooterPaginas">
+            <a href="12Reservas.html">Reservas</a>
+          </li>
+          <li class="celdaFooterPaginas">
+            <a href="12Calidad.html">Siente la Calidad</a>
+          </li>
+          <li class="celdaFooterPaginas">
+            <a href="12Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerRedesSociales">
+        <h3 style="text-align: center">REDES SOCIALES</h3>
+        <ul class="listaFooterRedesSociales">
+          <li class="celdaFooterRedesSociales">
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                src="multimedia/iconoInstagram.png"
+                width="25px"
+                alt="iconoInstagram"
+                title="Instagram"
+              />
+            </a>
+          </li>
+          <li class="celdaFooter">
+            <a href="https://www.twitter.com" target="_blank">
+              <img
+                src="multimedia/iconoTwitter.png"
+                width="25px"
+                alt="iconoTwitter"
+                title="Twitter"
+              />
+            </a>
+          </li>
+          <li class="celdaFooter">
+            <a href="https://www.facebook.com" target="_blank">
+              <img
+                src="multimedia/iconoFacebook.png"
+                width="25px"
+                alt="iconoFacebook"
+                title="Facebook"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 
   <!-- Optional JavaScript -->
@@ -199,4 +269,9 @@
   ></script>
 
   <script src="js/12Script.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#datetimepicker1").datetimepicker();
+    });
+  </script>
 </html>
