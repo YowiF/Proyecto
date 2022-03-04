@@ -28,14 +28,13 @@ $(document).ready(function () {
     });
   }
   function handleInEnlaces() {
+    $(this).removeClass("text-white");
     $(this).css({
-      color: "red",
+      color: "rgb(219, 107, 42)",
     });
   }
   function handleOutEnlaces() {
-    $(this).css({
-      color: "rgba(255,255,255,0.76)",
-    });
+    $(this).addClass("text-white");
   }
   function mostrartexto() {
     $(this).css({

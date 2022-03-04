@@ -3,10 +3,10 @@
 html {
   width: 100%;
   height: 100%;
-  font-family: "Calibri";
-  background-color: burlywood;
 }
 body {
+  font-family: "Calibri";
+  background-color: burlywood;
   margin: 0;
   padding: 0;
 }
@@ -14,14 +14,10 @@ hr {
   margin: auto 100px auto 100px;
 }
 header {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
   background-color: rgb(212, 141, 48);
 }
 .divLogoTitulo {
-  display: inherit;
+  display: flex;
 }
 .logo {
   width: 100px;
@@ -38,8 +34,6 @@ header {
 }
 nav {
   text-align: center;
-  margin: auto;
-  margin-right: 10px;
 }
 p {
   padding: 5px;
@@ -57,8 +51,6 @@ a:not(.tituloFooter) {
 .celdaNav {
   margin: 10px;
   padding: 15px;
-  display: inline;
-  position: relative;
   font-size: 130%;
   text-shadow: 3px 3px 2px #000;
 }
@@ -67,7 +59,6 @@ a:not(.tituloFooter) {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 h2 {
   font-size: 200%;
   text-shadow: 3px 3px 2px #000;
@@ -94,6 +85,13 @@ form {
 textarea {
   resize: none;
 }
+.form-control,
+.form-control:focus {
+  color: white;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
 .cajas {
   border-radius: 5px;
   margin: 15px 0;
@@ -101,19 +99,11 @@ textarea {
   border: 2px solid #fff;
 }
 .btn {
-  height: 40px;
   padding: 10px 40px;
   border-radius: 7px;
   background-color: #000;
-  color: #9abcbd;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: 0;
 }
 footer {
-  width: 100%;
-  height: 100%;
-  display: flex;
   background-color: rgb(212, 141, 48);
 }
 .footerPaginas {
@@ -154,7 +144,6 @@ footer {
 .divTxt {
   background-color: black;
   border: solid 3px gray;
-  text-align: justify;
   display: block;
   margin: 40px;
   margin-left: auto;
@@ -164,16 +153,13 @@ footer {
   padding: 20px;
 }
 .divSlidersBtn {
-  display: flex;
-  flex-grow: 2;
-  margin: 40px;
-  justify-content: center;
+  margin: 20px;
 }
 .sliderPlatos {
   display: flex;
-  max-width: 500px;
+  max-width: 300px;
   position: relative;
-  margin: 20px;
+  margin: 10px;
 }
 .sliderImagen {
   width: 280px;
@@ -254,33 +240,15 @@ button:hover {
 /* SELECTORES CARTA */
 
 .filaPlato {
-  display: flex;
   margin: 40px;
 }
 .bloquePlato {
-  display: flex;
-  margin: 10px;
-  flex: 1;
   background-color: rgb(228, 169, 93);
-}
-.imagenPlato {
-  display: flex;
-  width: auto;
-  height: 200px;
-  margin: 10px;
 }
 .textoPlato {
   background-color: rgb(212, 141, 48);
   width: fit-content;
-  margin: 10px;
-  padding: 10px;
-  text-align: justify;
-  flex: 1;
-}
-.txtImg {
-  position: relative;
-  bottom: 125px;
-  opacity: 0;
+  padding: 30px;
 }
 
 /* SELECTORES RESERVAS */
@@ -337,9 +305,6 @@ iframe {
   margin: 40px 20px 20px 20px;
 }
 .bloqueInfoLocal {
-  display: block;
-  width: 50%;
-  height: auto;
   background-color: rgb(235, 161, 64);
   padding: 10px 20px 20px 20px;
 }
@@ -347,5 +312,88 @@ iframe {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 20px 20px 20px;
   text-align: left;
-  height: 74%;
+}
+
+/* SELECTORES BOOTSTRAP */
+
+.container {
+  margin-top: 200px;
+}
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+img {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
 }
