@@ -83,32 +83,22 @@
       <hr />
 
       <div class="container bloqueInfoForm m-5">
-        <div class="row">
-          <div class="col-lg-5 col-md-6 col-sm-12 bloqueInfoLocal card">
-            <h2 class="tituloInfoLocal card-title">
-              Información Hamburguesería 12&12
-            </h2>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-lg-5 col-md-5 bloqueInfoLocal card my-2">
+            <h2 class="card-title">Información Hamburguesería 12&12</h2>
             <div class="infoLocal card-body">
-              <label class="telefonoLocal card-text font-weight-bold"
-                >Teléfono del local:
-                <p class="font-weight-normal">985 105 345</p></label
-              >
+              <h5 class="card-text font-weight-bold">Teléfono del local:</h5>
+              <p class="font-weight-normal">985 105 345</p>
 
-              <label class="ubicacionLocal card-text font-weight-bold"
-                >Ubicación del local:
-                <p class="font-weight-normal">
-                  Asturias, Gijón, calle Constitución
-                </p></label
-              >
+              <h5 class="card-text font-weight-bold">Ubicación del local:</h5>
+              <p class="font-weight-normal">
+                Asturias, Gijón, calle Constitución
+              </p>
             </div>
           </div>
 
-          <!-- <div class="col-lg-2">
-            <hr style="height: 425px;"/>
-          </div> -->
-
           <div
-            class="offset-lg-2 col-lg-5 col-md-6 col-sm-12 bloqueFormulario card"
+            class="offset-lg-2 offset-md-2 col-sm-12 col-lg-5 col-md-5 bloqueFormulario card my-2"
           >
             <h2 class="card-title">Contacto</h2>
             <form class="needs-validation card-body" novalidate>
@@ -140,7 +130,7 @@
                 <div class="col-md-6 mb-3">
                   <label for="email">Correo electrónico</label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control cajas"
                     id="email"
                     placeholder="danielgarciacastro8@gmail.com"
@@ -151,7 +141,7 @@
                 <div class="col-md-6 mb-3">
                   <label for="telefono">Teléfono</label>
                   <input
-                    type="text"
+                    type="tel"
                     class="form-control cajas"
                     id="telefono"
                     placeholder="684248283"
@@ -186,8 +176,13 @@
                   </div>
                 </div>
 
-                <div class="m-auto mb-3 m-auto">
-                  <input type="button" class="btn btn-primary" value="ENVIAR" />
+                <div class="m-auto mb-3">
+                  <button
+                    type="submit"
+                    class="btn btn-outline-light m-auto"
+                  >
+                    ENVIAR
+                  </button>
                 </div>
               </div>
             </form>
@@ -208,20 +203,22 @@
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white mb-3">
                   <input
                     type="email"
                     id="emailSuscripcion"
                     class="form-control cajas"
                   />
-                  <label class="form-label" for="emailSuscripcion">E-Mail</label>
+                  <label class="form-label" for="emailSuscripcion"
+                    >E-Mail</label
+                  >
                 </div>
               </div>
 
               <div class="col-auto">
                 <button
                   type="submit"
-                  class="btn btn-outline-light mb-4 mt-auto"
+                  class="btn btn-outline-light mb-3 mt-auto"
                 >
                   Suscríbete
                 </button>
