@@ -42,53 +42,111 @@
     </header>
 
     <div class="contenido">
-      <div class="bloqueInfoForm">
-        <div class="bloqueInfoLocal">
-          <h2 class="tituloInfoLocal">Información Pizzas del Pueblu</h2>
-          <div class="infoLocal">
-            <label class="telefonoLocal">Teléfono del local:<p>985 105 345</p></label>
-            
-            <label class="ubicacionLocal">Ubicación del local:<p>Asturias, Gijón, calle Constitución</p></label>
-          </div>
-        </div>
-  
-        <hr style="height: 425px;">
+      <div class="container bloqueInfoForm m-5">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-lg-5 col-md-5 bloqueInfoLocal card my-2">
+            <h2 class="card-title">Información Pizzas del Pueblu</h2>
+            <div class="infoLocal card-body">
+              <h5 class="card-text font-weight-bold">Teléfono del local:</h5>
+              <p class="font-weight-normal">985 105 345</p>
 
-        <div class="bloqueFormulario">
-          <h2>Contacto</h2>
-          <form name="form" autocomplete="off">
-            <div class="filaForm">
-              <div class="bloqueDatos">
-                <div class="bloqueNombre">
-                  <label for="nombre">Nombre y Apellidos</label>
-                  </br>
-                  <input type="text" name="nombre" class="cajas">
+              <h5 class="card-text font-weight-bold">Ubicación del local:</h5>
+              <p class="font-weight-normal">
+                Asturias, Gijón, calle Constitución
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="offset-lg-2 offset-md-2 col-sm-12 col-lg-5 col-md-5 bloqueFormulario card my-2"
+          >
+            <h2 class="card-title">Contacto</h2>
+            <form class="needs-validation card-body" novalidate>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control cajas"
+                    id="nombre"
+                    placeholder="Daniel"
+                    required
+                  />
                 </div>
-                <div class="bloqueemail">
+
+                <div class="col-md-6 mb-3">
+                  <label for="apellidos">Apellidos</label>
+                  <input
+                    type="text"
+                    class="form-control cajas"
+                    id="apellidos"
+                    placeholder="García Castro"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
                   <label for="email">Correo electrónico</label>
-                  </br>
-                  <input type="email" name="email" class="cajas">
+                  <input
+                    type="email"
+                    class="form-control cajas"
+                    id="email"
+                    placeholder="danielgarciacastro8@gmail.com"
+                    required
+                  />
                 </div>
-                <div class="bloquetelefono">
+
+                <div class="col-md-6 mb-3">
                   <label for="telefono">Teléfono</label>
-                  </br>
-                  <input type="text" name="telefono" class="cajas">
+                  <input
+                    type="tel"
+                    class="form-control cajas"
+                    id="telefono"
+                    placeholder="684248283"
+                    required
+                  />
                 </div>
               </div>
-              <div class="bloqueObservaciones">
-                <label class="labelObservaciones" for="observaciones">Observaciones</label>
-                </br>
-                <textarea rows="5" cols="45" name="observaciones" class="cajas observaciones"></textarea>
+
+              <div class="form-row">
+                <div class="col-md-12 offset-lg-3 col-lg-6 offset-lg-3 mb-3">
+                  <label for="observaciones">Observaciones</label>
+                  <textarea
+                    id="observaciones"
+                    class="form-control cajas"
+                    aria-label="With textarea"
+                    placeholder="Escriba sus observaciones ..."
+                  ></textarea>
+                </div>
               </div>
-            </div>
-            <div class="filaForm">
-              <div class="bloquePrivacidad">
-                <input type="checkbox" name="privacidad" class="privacidad">
-                <label for="privacidad">Política de privacidad</label>
+
+              <div class="form-row">
+                <div class="col-md-6 mb-3 m-auto">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="checkPrivacidad"
+                    />
+                    <label class="form-check-label" for="checkPrivacidad">
+                      Política de privacidad
+                    </label>
+                  </div>
+                </div>
+
+                <div class="m-auto mb-3">
+                  <button
+                    type="submit"
+                    class="btn btn-outline-light m-auto"
+                  >
+                    ENVIAR
+                  </button>
+                </div>
               </div>
-              <input type="submit" value="enviar" name="submit" class="btn">
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
