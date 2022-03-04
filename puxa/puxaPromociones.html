@@ -41,41 +41,50 @@
       </nav>
     </header>
 
-    <div class="contenido contenidoPromociones">
-      <div class="bloqueTituloPromociones">
-        <h2 style="padding-top: 40px">Promociones</h2>
+    <div>
+      <div class="bloqueTituloPromociones my-5">
+        <h2 class="pl-5 pt-5">Promociones</h2>
         <div class="bloquePromociones">
-          <div class="promociones">
-            <img
-              class="multimedia/imagenesPromociones"
-              src="multimedia/puxaProm1.png"
-            />
-            <p class="textosPromociones">25% descuento</p>
-          </div>
-          <div class="promociones">
-            <img
-              class="imagenesPromociones"
-              src="multimedia/puxaProm2.png"
-            />
-            <p class="textosPromociones">35% descuento</p>
-          </div>
-          <div class="bloquePromoMovil">
-            <div class="promociones">
+          <div class="row justify-content-center">
+            <div class="promociones card">
               <img
-                class="multimedia/imagenesPromociones"
-                src="multimedia/puxaProm3.png"
+                class="imagenesPromociones card-img"
+                src="multimedia/puxaProm1.png"
               />
-              <p class="textosPromociones">10% descuento</p>
+              <p class="textosPromociones card-text">15% descuento</p>
             </div>
-            <div>
-              <a class="bloqueMovil" href="puxaPedidos.html">
-                <img class="imagenMovil" src="multimedia/imagenMovil.jpg" />
-                <label class="labelMovil">¡LLAME O PIDA ONLINE YA!</label>
+            <div class="promociones card">
+              <img
+                class="imagenesPromociones card-img"
+                src="multimedia/puxaProm2.png"
+              />
+              <p class="textosPromociones card-text">20% descuento</p>
+            </div>
+            <div class="row">
+              <div class="promociones card col-auto col-md-6">
+                <img
+                  class="imagenesPromociones card-img"
+                  src="multimedia/puxaProm3.png"
+                />
+                <p class="textosPromociones card-text">5% descuento</p>
+              </div>
+              <a
+                class="bloqueMovil card col-auto col-md-6 w-auto"
+                href="puxaPedidos.html"
+              >
+                <img
+                  class="imagenMovil card-img content-image"
+                  src="multimedia/imagenMovil.jpg"
+                />
+                <label class="labelMovil card-text"
+                  >¡LLAME O PIDA ONLINE YA!</label
+                >
               </a>
             </div>
           </div>
         </div>
       </div>
+      >
     </div>
 
     <footer class="text-center text-white">

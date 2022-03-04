@@ -188,57 +188,29 @@ footer {
 
 /* SELECTORES PRINCIPAL */
 
-.bloqueMapaNewsMovil {
-  display: flex;
-  flex: 1;
-}
-.bloqueMapa {
-  width: 50%;
-  margin: 20px;
-  margin-left: 100px;
-}
 .mapa {
   width: 750px;
   height: 400px;
-  margin: 20px;
 }
 .bloqueNewsMovil {
-  display: block;
-  align-self: center;
-  margin: 40px;
-  margin-right: 150px;
   text-align: center;
-  width: 50%;
 }
 .bloqueNews {
-  width: 50%;
-  margin: 20px;
-  margin-bottom: 50px;
   background-color: rgba(68, 112, 11, 0.753);
   border: black solid 2px;
-  padding: 0 20px 0 20px;
 }
 .bloqueMovil {
-  display: flex;
-  margin: 20px;
-  margin-top: 150px;
-  background-color: white;
-  width: fit-content;
   border: rgba(68, 112, 11, 0.753) solid 2px;
 }
 .imagenMovil {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
 }
 .labelMovil {
-  align-self: center;
   background-color: white;
   color: black;
-  font-weight: bold;
   text-shadow: 1px 1px 1px #000;
   font-size: 150%;
-  margin-right: 10px;
 }
 
 /* SELECTORES CARTA */
@@ -332,12 +304,9 @@ footer {
   background-color: rgb(70, 114, 13);
 }
 .bloquePromociones {
-  display: inline-flex;
-  justify-content: space-between;
   margin: 20px;
 }
 .promociones {
-  display: block;
   margin: 20px;
   padding: 20px;
   background-color: steelblue;
@@ -349,9 +318,6 @@ footer {
   font-weight: bold;
   font-size: 140%;
   color: rgba(255, 255, 255, 0.76);
-}
-.bloquePromoMovil {
-  display: block;
 }
 
 /* SELECTORES CONTACTO */
