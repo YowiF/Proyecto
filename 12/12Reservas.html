@@ -14,44 +14,57 @@
       crossorigin="anonymous"
     />
 
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/12Styles.css" />
   </head>
   <body>
     <header class="container-fluid">
-      <nav class="navegacion navbar navbar-expand-lg navbar-dark">
-        <a class="divLogoTitulo navbar-brand" href="12Principal.html">
-          <img class="logo" src="multimedia/12Logo.png" alt="12Logo" />
-          <h1 class="titulo">Hamburguesería 12&12</h1>
-        </a>
+      <div class="row justify-content-center">
+        <nav class="navegacion navbar navbar-expand-lg navbar-dark">
+          <a class="divLogoTitulo navbar-brand" href="12Principal.html">
+            <img class="logo" src="multimedia/12Logo.png" alt="12Logo" />
+            <h1 class="titulo">Hamburguesería 12&12</h1>
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#barra-navegacion"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="barra-navegacion" class="collapse navbar-collapse">
-          <ul class="listaNav navbar-nav mr-auto">
-            <li class="celdaNav nav-item">
-              <a href="12Carta.html" class="nav-link">Carta</a>
-            </li>
-            <li class="celdaNav nav-item">
-              <a href="12Reservas.html" class="nav-link">Reservas</a>
-            </li>
-            <li class="celdaNav nav-item">
-              <a href="12Calidad.html" class="nav-link">Siente la Calidad</a>
-            </li>
-            <li class="celdaNav nav-item">
-              <a href="12Contacto.html" class="nav-link">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#barra-navegacion"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="barra-navegacion" class="collapse navbar-collapse">
+            <ul class="listaNav navbar-nav mr-auto">
+              <li class="celdaNav nav-item">
+                <a href="12Carta.html" class="text-white nav-link">Carta</a>
+              </li>
+              <li class="celdaNav nav-item">
+                <a href="12Reservas.html" class="text-white nav-link"
+                  >Reservas</a
+                >
+              </li>
+              <li class="celdaNav nav-item">
+                <a href="12Calidad.html" class="text-white nav-link"
+                  >Siente la Calidad</a
+                >
+              </li>
+              <li class="celdaNav nav-item">
+                <a href="12Contacto.html" class="text-white nav-link"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <div class="contenido contenidoReservas">
@@ -60,78 +73,79 @@
         <form class="needs-validation" novalidate>
           <div class="form-row">
             <div class="col-md-4 mb-3">
-              <label for="validationTooltip01">Nombre</label>
+              <label for="nombre">Nombre</label>
               <input
                 type="text"
-                class="form-control"
-                id="validationTooltip01"
+                class="form-control cajas"
+                id="nombre"
                 placeholder="Daniel"
                 required
               />
             </div>
 
             <div class="col-md-4 mb-3">
-              <label for="validationTooltip02">Apellidos</label>
+              <label for="apellidos">Apellidos</label>
               <input
                 type="text"
-                class="form-control"
-                id="validationTooltip02"
+                class="form-control cajas"
+                id="apellidos"
                 placeholder="García Castro"
                 required
               />
             </div>
 
             <div class="col-md-4 mb-3">
-              <label for="validationTooltipUsername"
-                >Número de Comensales</label
-              >
+              <label for="numComensales">Número de Comensales</label>
               <input
                 type="text"
-                class="form-control"
-                id="validationTooltipUsername"
+                class="form-control cajas"
+                id="numComensales"
                 placeholder="4"
-                aria-describedby="validationTooltipUsernamePrepend"
                 required
               />
             </div>
           </div>
 
           <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationTooltip03">Correo electrónico</label>
+            <div class="col-md-4 mb-3">
+              <label for="email">Correo electrónico</label>
               <input
                 type="text"
-                class="form-control"
-                id="validationTooltip03"
+                class="form-control cajas"
+                id="email"
                 placeholder="danielgarciacastro8@gmail.com"
                 required
               />
             </div>
 
-            <div class="col-md-6 mb-3">
-              <label for="validationTooltip04">Teléfono</label>
+            <div class="col-md-4 mb-3">
+              <label for="telefono">Teléfono</label>
               <input
                 type="text"
-                class="form-control"
-                id="validationTooltip04"
+                class="form-control cajas"
+                id="telefono"
                 placeholder="684248283"
                 required
               />
             </div>
-          </div>
 
-          <div class="form-row">
             <div class="col-md-4 mb-3">
+              <label for="fechaReserva">Fecha de Reserva</label>
               <div class="input-group date" id="datetimepicker1">
-                <label for="datepicker">Fecha de Reserva</label>
-                <input type="text" class="form-control" id="datepicker" />
+                <input
+                  type="text"
+                  class="form-control cajas"
+                  id="fechaReserva"
+                />
                 <span class="input-group-addon">
                   <span class="glyphicon glyphicon-calendar"></span>
                 </span>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-4 mb-3">
+          <div class="form-row">
+            <div class="col-md-4 offset-md-2 mb-3">
               <div class="form-check">
                 <input
                   class="form-check-input"
@@ -144,7 +158,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 mb-3">
+            <div class="offset-md-2 col-md-4 mb-3">
               <div class="form-check">
                 <input
                   class="form-check-input"
@@ -160,15 +174,16 @@
 
           <div class="form-row">
             <div class="col-md-12 offset-lg-3 col-lg-6 offset-lg-3 mb-3">
-              <label for="validationTooltip05">Observaciones</label>
+              <label for="observaciones">Observaciones</label>
               <textarea
-                class="form-control"
+                id="observaciones"
+                class="form-control cajas"
                 aria-label="With textarea"
                 placeholder="Escriba sus observaciones ..."
               ></textarea>
             </div>
           </div>
-          
+
           <div class="form-row">
             <div class="m-auto mb-3">
               <input type="button" class="btn btn-primary" value="ENVIAR" />
@@ -178,60 +193,124 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footerPaginas">
-        <a class="tituloFooter" href="12Principal.html">
-          <h3 style="text-align: center">HAMBURGUESERÍA 12&12</h3>
-        </a>
-        <ul class="listaFooterPaginas">
-          <li class="celdaFooterPaginas">
-            <a href="12Carta.html">Carta</a>
-          </li>
-          <li class="celdaFooterPaginas">
-            <a href="12Reservas.html">Reservas</a>
-          </li>
-          <li class="celdaFooterPaginas">
-            <a href="12Calidad.html">Siente la Calidad</a>
-          </li>
-          <li class="celdaFooterPaginas">
-            <a href="12Contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footerRedesSociales">
-        <h3 style="text-align: center">REDES SOCIALES</h3>
-        <ul class="listaFooterRedesSociales">
-          <li class="celdaFooterRedesSociales">
-            <a href="https://www.instagram.com" target="_blank">
-              <img
-                src="multimedia/iconoInstagram.png"
-                width="25px"
-                alt="iconoInstagram"
-                title="Instagram"
-              />
-            </a>
-          </li>
-          <li class="celdaFooter">
-            <a href="https://www.twitter.com" target="_blank">
-              <img
-                src="multimedia/iconoTwitter.png"
-                width="25px"
-                alt="iconoTwitter"
-                title="Twitter"
-              />
-            </a>
-          </li>
-          <li class="celdaFooter">
-            <a href="https://www.facebook.com" target="_blank">
-              <img
-                src="multimedia/iconoFacebook.png"
-                width="25px"
-                alt="iconoFacebook"
-                title="Facebook"
-              />
-            </a>
-          </li>
-        </ul>
+    <footer class="text-center text-white">
+      <div class="container p-4 m-auto">
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>¡Suscríbete con tu correo electrónico!</strong>
+                </p>
+              </div>
+
+              <div class="col-md-5 col-12">
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="emailSuscripcion"
+                    class="form-control cajas"
+                  />
+                  <label class="form-label" for="emailSuscripcion">E-Mail</label>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <button
+                  type="submit"
+                  class="btn btn-outline-light mb-4 mt-auto"
+                >
+                  Suscríbete
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section class="mt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <section class="mb-4">
+                <h4 class="text-uppercase mb-3">Texto Footer</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+              </section>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h4 class="text-uppercase mb-3">HAMBURGUESERÍA 12&12</h4>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="12Principal.html" class="text-white">Inicio</a>
+                </li>
+                <li>
+                  <a href="12Carta.html" class="text-white">Carta</a>
+                </li>
+                <li>
+                  <a href="12Reservas.html" class="text-white">Reservas</a>
+                </li>
+                <li>
+                  <a href="12Calidad.html" class="text-white"
+                    >Siente la Calidad</a
+                  >
+                </li>
+                <li>
+                  <a href="12Contacto.html" class="text-white">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <section class="mb-4">
+                <h4 class="text-uppercase mb-3">REDES SOCIALES</h4>
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="www.facebook.com"
+                  title="Facebook"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="www.twitter.com"
+                  title="Twitter"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="www.instagram.com"
+                  title="Instagram"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="www.linkedin.com"
+                  title="LinkedIn"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  href="www.github.com"
+                  title="GitHub"
+                  role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+            </div>
+          </div>
+        </section>
       </div>
     </footer>
   </body>
