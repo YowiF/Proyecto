@@ -23,18 +23,18 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="titulo">
-        <a href="index.html">Puxa Cachopo</a>
+    <header class="row justify-content-between">
+      <h1 class="titulo row justify-content-between m-3">
+        <a class="ml-3 my-3" href="index.html">Puxa Cachopo</a>
+        <a class="w-100 ml-3 col-sm-6 col-md-6" href="index.html">
+          <img src="multimedia/puxaLogo.png" alt="mapaDelivery" />
+        </a>
       </h1>
-      <a class="logo" href="index.html">
-        <img src="multimedia/puxaLogo.png" />
-      </a>
 
-      <span class="openNavegacion" style="cursor: pointer">&#9776;</span>
-      <nav>
+      <span class="openNavegacion mx-5 mt-4" style="cursor: pointer">&#9776;</span>
+      <nav class="">
         <a href="javascript:void(0)" class="closebtn openNavegacion">&times;</a>
-        <a href="puxaCarta.html">Carta</a>
+        <a class="" href="puxaCarta.html">Carta</a>
         <a href="puxaPedidos.html">Pedidos</a>
         <a href="puxaPromociones.html">Promociones</a>
         <a href="puxaContacto.html">Contacto</a>
@@ -42,64 +42,64 @@
     </header>
 
     <section>
-      <div class="bloqueTituloPromociones my-5">
-        <h2 class="pl-5 pt-5">Promociones</h2>
-        <div>
-          <div class="row justify-content-center">
-            <div class="promociones card m-4 p-2">
+      <div class="bloqueTituloPromociones card m-5">
+        <h2 class="card-title pl-4 pt-4">Promociones</h2>
+        <div class="row card-body justify-content-between px-4">
+          <div class="promociones card p-3 col-lg-3 col-md-5 col-sm-12 my-3">
+            <img
+              class="imagenesPromociones card-img"
+              src="multimedia/puxaProm1.png"
+            />
+            <p class="textosPromociones card-text">15% descuento</p>
+          </div>
+          <div
+            class="promociones card p-3 col-lg-3 col-md-5 col-sm-12 offset-lg-1 my-3"
+          >
+            <img
+              class="imagenesPromociones card-img"
+              src="multimedia/puxaProm2.png"
+            />
+            <p class="textosPromociones card-text">20% descuento</p>
+          </div>
+          <div
+            class="promociones card p-3 col-lg-3 col-md-5 col-sm-12 offset-lg-1 my-3"
+          >
+            <img
+              class="imagenesPromociones card-img"
+              src="multimedia/puxaProm3.png"
+            />
+            <p class="textosPromociones card-text">5% descuento</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="p-3 align-content-end">
+            <a class="bloqueMovil card" href="puxaPedidos.html">
               <img
-                class="imagenesPromociones card-img"
-                src="multimedia/puxaProm1.png"
+                class="imagenMovil card-img content-image"
+                src="multimedia/imagenMovil.jpg"
               />
-              <p class="textosPromociones card-text">15% descuento</p>
-            </div>
-            <div class="promociones card m-4 p-2">
-              <img
-                class="imagenesPromociones card-img"
-                src="multimedia/puxaProm2.png"
-              />
-              <p class="textosPromociones card-text">20% descuento</p>
-            </div>
-            <div class="row">
-              <div class="promociones card col-auto col-md-6 m-4 p-2">
-                <img
-                  class="imagenesPromociones card-img"
-                  src="multimedia/puxaProm3.png"
-                />
-                <p class="textosPromociones card-text">5% descuento</p>
-              </div>
-              <a
-                class="bloqueMovil card col-auto col-md-6 w-auto"
-                href="puxaPedidos.html"
+              <label class="labelMovil card-text"
+                >¡LLAME O PIDA ONLINE YA!</label
               >
-                <img
-                  class="imagenMovil card-img content-image"
-                  src="multimedia/imagenMovil.jpg"
-                />
-                <label class="labelMovil card-text"
-                  >¡LLAME O PIDA ONLINE YA!</label
-                >
-              </a>
-            </div>
+            </a>
           </div>
         </div>
       </div>
-      >
     </section>
 
     <footer class="text-center text-white">
-      <div class="container p-4 m-auto">
-        <section class="">
-          <form action="">
+      <div class="container p-4">
+        <section>
+          <form>
             <div class="row d-flex justify-content-center">
-              <div class="col-auto">
+              <div class="col-auto m-3">
                 <p class="pt-2">
                   <strong>¡Suscríbete con tu correo electrónico!</strong>
                 </p>
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white m-3 mt-auto">
                   <input
                     type="email"
                     id="emailSuscripcion"
@@ -112,10 +112,7 @@
               </div>
 
               <div class="col-auto">
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 mt-auto"
-                >
+                <button type="submit" class="btn btn-outline-light my-3">
                   Suscríbete
                 </button>
               </div>

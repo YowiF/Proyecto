@@ -23,148 +23,144 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="titulo">
-        <a href="index.html">Puxa Cachopo</a>
+    <header class="row justify-content-between">
+      <h1 class="titulo row justify-content-between m-3">
+        <a class="ml-3 my-3" href="index.html">Puxa Cachopo</a>
+        <a class="w-100 ml-3 col-sm-6 col-md-6" href="index.html">
+          <img src="multimedia/puxaLogo.png" alt="mapaDelivery" />
+        </a>
       </h1>
-      <a class="logo" href="index.html">
-        <img src="multimedia/puxaLogo.png" />
-      </a>
 
-      <span class="openNavegacion" style=cursor:pointer;>&#9776;</span>
-      <nav class="navegacion">
-        <a href="javascript:void(0)" class="closebtn openNavegacion" >&times;</a>
-        <a href="puxaCarta.html">Carta</a>
+      <span class="openNavegacion mx-5 mt-4" style="cursor: pointer">&#9776;</span>
+      <nav class="">
+        <a href="javascript:void(0)" class="closebtn openNavegacion">&times;</a>
+        <a class="" href="puxaCarta.html">Carta</a>
         <a href="puxaPedidos.html">Pedidos</a>
         <a href="puxaPromociones.html">Promociones</a>
         <a href="puxaContacto.html">Contacto</a>
       </nav>
     </header>
 
-    <section>
-      <div class="bloqueInfoForm m-5 text-center">
-        <div class="row justify-content-center">
-          <div class="bloqueInfoLocal card col-sm-12 col-lg-5 col-md-5 my-2 p-3">
-            <h2 class="card-title">Información Puxa Cachopo</h2>
-            <div class="infoLocal card-body text-left">
-              <h5 class="card-text font-weight-bold">Teléfono del local:</h5>
-              <p class="font-weight-normal">985 105 345</p>
+    <section class="bloqueInfoForm m-5 text-center">
+      <div class="row justify-content-center">
+        <div class="bloqueInfoLocal card col-sm-12 col-lg-5 col-md-5 my-2 p-3">
+          <h2 class="card-title">Información Puxa Cachopo</h2>
+          <div class="infoLocal card-body text-left">
+            <h5 class="card-text font-weight-bold">Teléfono del local:</h5>
+            <p class="font-weight-normal">985 105 345</p>
 
-              <h5 class="card-text font-weight-bold">Ubicación del local:</h5>
-              <p class="font-weight-normal">
-                Asturias, Gijón, calle Constitución
-              </p>
+            <h5 class="card-text font-weight-bold">Ubicación del local:</h5>
+            <p class="font-weight-normal">
+              Asturias, Gijón, calle Constitución
+            </p>
+          </div>
+        </div>
+
+        <div class="bloqueFormulario card offset-lg-2 offset-md-2 col-sm-12 col-lg-5 col-md-5 my-2 p-3">
+          <h2 class="card-title">Contacto</h2>
+          <form class="needs-validation card-body" novalidate>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control cajas"
+                  id="nombre"
+                  placeholder="Daniel"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="apellidos">Apellidos</label>
+                <input
+                  type="text"
+                  class="form-control cajas"
+                  id="apellidos"
+                  placeholder="García Castro"
+                  required
+                />
+              </div>
             </div>
-          </div>
 
-          <div
-            class="bloqueFormulario offset-lg-2 offset-md-2 col-sm-12 col-lg-5 col-md-5 card my-2 p-3"
-          >
-            <h2 class="card-title">Contacto</h2>
-            <form class="needs-validation card-body" novalidate>
-              <div class="form-row">
-                <div class="col-md-6 mb-3">
-                  <label for="nombre">Nombre</label>
-                  <input
-                    type="text"
-                    class="form-control cajas"
-                    id="nombre"
-                    placeholder="Daniel"
-                    required
-                  />
-                </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="email">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control cajas"
+                  id="email"
+                  placeholder="danielgarciacastro8@gmail.com"
+                  required
+                />
+              </div>
 
-                <div class="col-md-6 mb-3">
-                  <label for="apellidos">Apellidos</label>
+              <div class="col-md-6 mb-3">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control cajas"
+                  id="telefono"
+                  placeholder="684248283"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 offset-lg-3 col-lg-6 offset-lg-3 mb-3">
+                <label for="observaciones">Observaciones</label>
+                <textarea
+                  id="observaciones"
+                  class="form-control cajas"
+                  aria-label="With textarea"
+                  placeholder="Escriba sus observaciones ..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-6 mb-3 m-auto">
+                <div class="form-check">
                   <input
-                    type="text"
-                    class="form-control cajas"
-                    id="apellidos"
-                    placeholder="García Castro"
-                    required
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkPrivacidad"
                   />
+                  <label class="form-check-label" for="checkPrivacidad">
+                    Política de privacidad
+                  </label>
                 </div>
               </div>
 
-              <div class="form-row">
-                <div class="col-md-6 mb-3">
-                  <label for="email">Correo electrónico</label>
-                  <input
-                    type="email"
-                    class="form-control cajas"
-                    id="email"
-                    placeholder="danielgarciacastro8@gmail.com"
-                    required
-                  />
-                </div>
-
-                <div class="col-md-6 mb-3">
-                  <label for="telefono">Teléfono</label>
-                  <input
-                    type="tel"
-                    class="form-control cajas"
-                    id="telefono"
-                    placeholder="684248283"
-                    required
-                  />
-                </div>
+              <div class="m-auto mb-3">
+                <button
+                  type="submit"
+                  class="btn btn-outline-light m-auto"
+                >
+                  ENVIAR
+                </button>
               </div>
-
-              <div class="form-row">
-                <div class="col-md-12 offset-lg-3 col-lg-6 offset-lg-3 mb-3">
-                  <label for="observaciones">Observaciones</label>
-                  <textarea
-                    id="observaciones"
-                    class="form-control cajas"
-                    aria-label="With textarea"
-                    placeholder="Escriba sus observaciones ..."
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="col-md-6 mb-3 m-auto">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="checkPrivacidad"
-                    />
-                    <label class="form-check-label" for="checkPrivacidad">
-                      Política de privacidad
-                    </label>
-                  </div>
-                </div>
-
-                <div class="m-auto mb-3">
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light m-auto"
-                  >
-                    ENVIAR
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
     </div>
 
     <footer class="text-center text-white">
-      <div class="container p-4 m-auto">
-        <section class="">
-          <form action="">
+      <div class="container p-4">
+        <section>
+          <form>
             <div class="row d-flex justify-content-center">
-              <div class="col-auto">
+              <div class="col-auto m-3">
                 <p class="pt-2">
                   <strong>¡Suscríbete con tu correo electrónico!</strong>
                 </p>
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white m-3 mt-auto">
                   <input
                     type="email"
                     id="emailSuscripcion"
@@ -177,10 +173,7 @@
               </div>
 
               <div class="col-auto">
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 mt-auto"
-                >
+                <button type="submit" class="btn btn-outline-light my-3">
                   Suscríbete
                 </button>
               </div>
