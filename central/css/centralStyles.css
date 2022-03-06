@@ -1,22 +1,18 @@
 /* SELECTORES GENERALES CENTRAL */
 body {
-  font-family: "Calibri";
   background-color: burlywood;
+  font-family: "Calibri";
 }
 header {
   background-color: rgb(212, 141, 48);
 }
-.divLogoTitulo {
-  display: flex;
-}
 .logo {
   width: 100px;
   height: 100px;
-  margin: 5px;
 }
 .titulo {
   text-shadow: 3px 3px 2px #000;
-  margin: 30px;
+  margin: 25px;
 }
 nav {
   text-align: center;
@@ -125,8 +121,8 @@ button:hover {
 /* SELECTORES INFORMACIÓN NUTRICIONAL */
 
 .bloqueTituloInfoNutricional {
-  color: rgba(255, 255, 255, 0.76);
   background-color: rgb(235, 161, 64);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 /* SELECTORES CONTACTO */

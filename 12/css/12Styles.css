@@ -6,13 +6,9 @@ body {
 header {
   background-color: rgba(216, 125, 7, 0.829);
 }
-.divLogoTitulo {
-  display: flex;
-}
 .logo {
   width: 100px;
   height: 100px;
-  margin: 5px;
 }
 .titulo {
   text-shadow: 3px 3px 2px #000;

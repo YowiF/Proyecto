@@ -26,7 +26,7 @@
     <header class="container-fluid">
       <div class="row justify-content-center">
         <nav class="navegacion navbar navbar-expand-lg navbar-dark">
-          <a class="divLogoTitulo navbar-brand" href="index.html">
+          <a class="row justify-content-center" href="index.html">
             <img
               class="logo"
               src="multimedia/CentralLogo.png"
@@ -46,6 +46,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div id="barra-navegacion" class="collapse navbar-collapse">
             <ul class="listaNav navbar-nav mr-auto">
               <li class="celdaNav nav-item">
@@ -77,40 +78,42 @@
     </header>
 
     <section>
-      <div class="row justify-content-center">
-        <div class="bloqueTituloInfoNutricional card text-center p-3 m-5">
-          <h2 class="card-title mb-5">Información Nutricional</h2>
-          <div class="card-body mb-5">
-            <a data-toggle="modal" data-target="#myModal">
-              <img
-                class="col-12 h-100"
-                src="multimedia/centralImagenInfoNutricional.PNG"
-                alt="centralInfoNutricional"
-              />
-            </a>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="bloqueTituloInfoNutricional card text-center p-3 m-5">
+            <h2 class="card-title mb-5">Información Nutricional</h2>
+            <div class="card-body mb-5">
+              <a data-toggle="modal" data-target="#myModal">
+                <img
+                  class="w-100"
+                  src="multimedia/centralImagenInfoNutricional.PNG"
+                  alt="centralInfoNutricional"
+                />
+              </a>
 
-            <!-- The Modal -->
-            <div class="modal fade" id="myModal">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <img
-                      class="mapa col-12 h-100"
-                      src="multimedia/centralImagenInfoNutricional.PNG"
-                      alt="centralInfoNutricional"
-                    />
-                  </div>
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <img
+                        class="mapa col-12 h-100"
+                        src="multimedia/centralImagenInfoNutricional.PNG"
+                        alt="centralInfoNutricional"
+                      />
+                    </div>
 
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-danger"
-                      data-dismiss="modal"
-                    >
-                      Cerrar
-                    </button>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
