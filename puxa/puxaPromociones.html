@@ -23,74 +23,92 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="titulo">
-        <a href="puxaPrincipal.html">Puxa Cachopo</a>
+    <header class="row justify-content-between">
+      <h1 class="titulo row justify-content-between m-3">
+        <a class="ml-3 my-3" href="index.html">Puxa Cachopo</a>
+        <a class="w-100 ml-3 col-sm-6 col-md-6" href="index.html">
+          <img
+            class="logo w-100 h-100"
+            src="multimedia/puxaLogo.png"
+            alt="mapaDelivery"
+          />
+        </a>
       </h1>
-      <a class="logo" href="puxaPrincipal.html">
-        <img src="multimedia/puxaLogo.png" />
-      </a>
 
-      <span class="openNavegacion" style="cursor: pointer">&#9776;</span>
-      <nav>
+      <span class="openNavegacion mx-5 mt-4" style="cursor: pointer"
+        >&#9776;</span
+      >
+      <nav class="">
         <a href="javascript:void(0)" class="closebtn openNavegacion">&times;</a>
-        <a href="puxaCarta.html">Carta</a>
+        <a class="" href="puxaCarta.html">Carta</a>
         <a href="puxaPedidos.html">Pedidos</a>
         <a href="puxaPromociones.html">Promociones</a>
         <a href="puxaContacto.html">Contacto</a>
       </nav>
     </header>
 
-    <div class="contenido contenidoPromociones">
-      <div class="bloqueTituloPromociones">
-        <h2 style="padding-top: 40px">Promociones</h2>
-        <div class="bloquePromociones">
-          <div class="promociones">
+    <section>
+      <div class="bloqueTituloPromociones card m-5">
+        <h2 class="card-title pl-4 pt-4">Promociones</h2>
+        <div class="row card-body justify-content-between px-4">
+          <div class="promociones card p-3 col-lg-3 col-md-5 col-sm-12 my-3">
             <img
-              class="multimedia/imagenesPromociones"
-              src="multimedia/puxaImagenPromocion1.png"
+              class="imagenesPromociones card-img"
+              src="multimedia/puxaProm1.png"
+              alt="puxaProm1"
             />
-            <p class="textosPromociones">25% descuento</p>
+            <p class="textosPromociones card-text">15% descuento</p>
           </div>
-          <div class="promociones">
+          <div
+            class="promociones card p-3 col-lg-3 col-md-5 col-sm-12 offset-lg-1 my-3"
+          >
             <img
-              class="imagenesPromociones"
-              src="multimedia/puxaImagenPromocion2.png"
+              class="imagenesPromociones card-img"
+              src="multimedia/puxaProm2.png"
+              alt="puxaProm2"
             />
-            <p class="textosPromociones">35% descuento</p>
+            <p class="textosPromociones card-text">20% descuento</p>
           </div>
-          <div class="bloquePromoMovil">
-            <div class="promociones">
+          <div
+            class="promociones card p-3 col-lg-3 col-md-5 col-sm-12 offset-lg-1 my-3"
+          >
+            <img
+              class="imagenesPromociones card-img"
+              src="multimedia/puxaProm3.png"
+              alt="puxaProm3"
+            />
+            <p class="textosPromociones card-text">5% descuento</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="p-3 align-content-end">
+            <a class="bloqueMovil card" href="puxaPedidos.html">
               <img
-                class="multimedia/imagenesPromociones"
-                src="multimedia/puxaImagenPromocion3.png"
+                class="imagenMovil card-img content-image"
+                src="multimedia/imagenMovil.jpg"
               />
-              <p class="textosPromociones">10% descuento</p>
-            </div>
-            <div>
-              <a class="bloqueMovil" href="puxaPedidos.html">
-                <img class="imagenMovil" src="multimedia/imagenMovil.jpg" />
-                <label class="labelMovil">¡LLAME O PIDA ONLINE YA!</label>
-              </a>
-            </div>
+              <label class="labelMovil card-text"
+                >¡LLAME O PIDA ONLINE YA!</label
+              >
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer class="text-center text-white">
-      <div class="container p-4 m-auto">
-        <section class="">
-          <form action="">
+      <div class="container p-4">
+        <section>
+          <form>
             <div class="row d-flex justify-content-center">
-              <div class="col-auto">
+              <div class="col-auto m-3">
                 <p class="pt-2">
                   <strong>¡Suscríbete con tu correo electrónico!</strong>
                 </p>
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white m-3 mt-auto">
                   <input
                     type="email"
                     id="emailSuscripcion"
@@ -103,10 +121,7 @@
               </div>
 
               <div class="col-auto">
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 mt-auto"
-                >
+                <button type="submit" class="btn btn-outline-light my-3">
                   Suscríbete
                 </button>
               </div>
@@ -133,7 +148,7 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="puxaPrincipal.html" class="text-white">Inicio</a>
+                  <a href="index.html" class="text-white">Inicio</a>
                 </li>
                 <li>
                   <a href="puxaCarta.html" class="text-white">Carta</a>

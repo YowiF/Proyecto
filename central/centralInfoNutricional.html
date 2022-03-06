@@ -26,7 +26,7 @@
     <header class="container-fluid">
       <div class="row justify-content-center">
         <nav class="navegacion navbar navbar-expand-lg navbar-dark">
-          <a class="divLogoTitulo navbar-brand" href="centralPrincipal.html">
+          <a class="divLogoTitulo navbar-brand" href="index.html">
             <img
               class="logo"
               src="multimedia/CentralLogo.png"
@@ -76,32 +76,63 @@
       </div>
     </header>
 
-    <div class="contenido contenidoInfoNutricional">
-      <div class="bloqueTituloInfoNutricional">
-        <div class="container m-auto">
-          <h2 class="m-auto mb-5">Información Nutricional</h2>
-          <img
-            class="imagenInfoNutricional"
-            src="multimedia/centralImagenInfoNutricional.PNG"
-            alt="imgInfoNutricional"
-          />
+    <section>
+      <div class="row justify-content-center">
+        <div class="bloqueTituloInfoNutricional card text-center p-3 m-5">
+          <h2 class="card-title mb-5">Información Nutricional</h2>
+          <div class="card-body mb-5">
+            <a data-toggle="modal" data-target="#myModal">
+              <img
+                class="col-12 h-100"
+                src="multimedia/centralImagenInfoNutricional.PNG"
+                alt="centralInfoNutricional"
+              />
+            </a>
+
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <img
+                      class="mapa col-12 h-100"
+                      src="multimedia/centralImagenInfoNutricional.PNG"
+                      alt="centralInfoNutricional"
+                    />
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer class="text-center text-white">
-      <div class="container p-4 m-auto">
-        <section class="">
-          <form action="">
+      <div class="container p-4">
+        <section>
+          <form>
             <div class="row d-flex justify-content-center">
-              <div class="col-auto">
+              <div class="col-auto m-3">
                 <p class="pt-2">
                   <strong>¡Suscríbete con tu correo electrónico!</strong>
                 </p>
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white m-3 mt-auto">
                   <input
                     type="email"
                     id="emailSuscripcion"
@@ -114,10 +145,7 @@
               </div>
 
               <div class="col-auto">
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 mt-auto"
-                >
+                <button type="submit" class="btn btn-outline-light my-3">
                   Suscríbete
                 </button>
               </div>
@@ -144,7 +172,7 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="centralPrincipal.html" class="text-white">Inicio</a>
+                  <a href="index.html" class="text-white">Inicio</a>
                 </li>
                 <li>
                   <a href="centralCarta.html" class="text-white">Carta</a>

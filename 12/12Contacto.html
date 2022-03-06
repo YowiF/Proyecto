@@ -25,7 +25,7 @@
     <header class="container-fluid">
       <div class="row justify-content-center">
         <nav class="navegacion navbar navbar-expand-lg navbar-dark">
-          <a class="divLogoTitulo navbar-brand" href="12Principal.html">
+          <a class="divLogoTitulo navbar-brand" href="index.html">
             <img class="logo" src="multimedia/12Logo.png" alt="12Logo" />
             <h1 class="titulo">Hamburguesería 12&12</h1>
           </a>
@@ -67,13 +67,13 @@
       </div>
     </header>
 
-    <div class="contenido contenidoContacto">
-      <div class="bloqueMapa card">
+    <section class="contenidoContacto">
+      <div class="bloqueMapa card m-5">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d723.1636300224554!2d-5.673717070744155!3d43.530396598695354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367cf14bec35cf%3A0xd65e13785d3668ec!2sAv.%20de%20la%20Constituci%C3%B3n%2C%2033208%20Gij%C3%B3n%2C%20Asturias!5e0!3m2!1ses!2ses!4v1637959671998!5m2!1ses!2ses"
           width="600"
           height="450"
-          class="card-body"
+          class="card-body w-100"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -82,11 +82,13 @@
 
       <hr />
 
-      <div class="container bloqueInfoForm m-5">
+      <div class="text-center m-5">
         <div class="row justify-content-center">
-          <div class="col-sm-12 col-lg-5 col-md-5 bloqueInfoLocal card my-2">
+          <div
+            class="bloqueInfoLocal card col-sm-12 col-lg-5 col-md-5 my-2 p-3"
+          >
             <h2 class="card-title">Información Hamburguesería 12&12</h2>
-            <div class="infoLocal card-body">
+            <div class="infoLocal card-body text-left">
               <h5 class="card-text font-weight-bold">Teléfono del local:</h5>
               <p class="font-weight-normal">985 105 345</p>
 
@@ -98,7 +100,7 @@
           </div>
 
           <div
-            class="offset-lg-2 offset-md-2 col-sm-12 col-lg-5 col-md-5 bloqueFormulario card my-2"
+            class="bloqueFormulario card offset-lg-2 offset-md-2 col-sm-12 col-lg-5 col-md-5 my-2 p-3"
           >
             <h2 class="card-title">Contacto</h2>
             <form class="needs-validation card-body" novalidate>
@@ -177,10 +179,7 @@
                 </div>
 
                 <div class="m-auto mb-3">
-                  <button
-                    type="submit"
-                    class="btn btn-outline-light m-auto"
-                  >
+                  <button type="submit" class="btn btn-outline-light m-auto">
                     ENVIAR
                   </button>
                 </div>
@@ -189,21 +188,21 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer class="text-center text-white">
-      <div class="container p-4 m-auto">
-        <section class="">
-          <form action="">
+      <div class="container p-4">
+        <section>
+          <form>
             <div class="row d-flex justify-content-center">
-              <div class="col-auto">
+              <div class="col-auto m-3">
                 <p class="pt-2">
                   <strong>¡Suscríbete con tu correo electrónico!</strong>
                 </p>
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-3">
+                <div class="form-outline form-white m-3 mt-auto">
                   <input
                     type="email"
                     id="emailSuscripcion"
@@ -216,10 +215,7 @@
               </div>
 
               <div class="col-auto">
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-3 mt-auto"
-                >
+                <button type="submit" class="btn btn-outline-light my-3">
                   Suscríbete
                 </button>
               </div>
@@ -246,7 +242,7 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="12Principal.html" class="text-white">Inicio</a>
+                  <a href="index.html" class="text-white">Inicio</a>
                 </li>
                 <li>
                   <a href="12Carta.html" class="text-white">Carta</a>
