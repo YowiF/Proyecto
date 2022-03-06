@@ -75,12 +75,13 @@ form {
 }
 .cajas {
   background-color: rgba(110, 161, 42, 0.863);
-  margin: 15px 0;
   border: 2px solid #fff;
+  margin: 15px 0;
 }
 .btn {
   padding: 5px 25px;
   border-radius: 7px;
+  background-color: #000;
 }
 footer {
   background-color: rgba(201, 98, 29, 0.904);
