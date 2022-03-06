@@ -23,70 +23,113 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="titulo">
-        <a href="index.html">Pizzas del Pueblu</a>
+    <header class="row justify-content-between">
+      <h1 class="titulo row justify-content-between m-3">
+        <a class="ml-3 my-3" href="index.html">Pizzas del Pueblu</a>
+        <a class="ml-3 col-sm-6 col-md-6" href="index.html">
+          <img
+            class="logo w-100 h-100"
+            src="multimedia/pizzasLogo.png"
+            alt="pizzasLogo"
+          />
+        </a>
       </h1>
-      <a class="logo" href="index.html">
-        <img src="multimedia/pizzasLogo.png" />
-      </a>
 
-      <span class="openNavegacion" style="cursor: pointer">&#9776;</span>
-      <nav>
+      <span class="openNavegacion mx-5 mt-4" style="cursor: pointer"
+        >&#9776;</span
+      >
+      <nav class="">
         <a href="javascript:void(0)" class="closebtn openNavegacion">&times;</a>
-        <a href="pizzasCarta.html">Carta</a>
+        <a class="" href="pizzasCarta.html">Carta</a>
         <a href="pizzasPedidos.html">Pedidos</a>
         <a href="pizzasPromociones.html">Promociones</a>
         <a href="pizzasContacto.html">Contacto</a>
       </nav>
     </header>
 
-    <section>
-      <div class="row">
-        <div class="col-5 offset-1 m-5 m-3">
-          <img class="mapa" src="multimedia/pizzasPrincipalMapa.PNG" />
+    <section class="m-5">
+      <div class="row justify-content-between">
+        <div class="mb-5">
+          <a data-toggle="modal" data-target="#myModal">
+            <img
+              class="mapa col-12 h-100"
+              src="multimedia/pizzasPrincipalMapa.PNG"
+              alt="mapaDelivery"
+            />
+          </a>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img
+                    id="map"
+                    class="mapa col-12 h-100"
+                    src="multimedia/pizzasPrincipalMapa.PNG"
+                    alt="mapaDelivery"
+                  />
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="bloqueNewsMovil col-5 offset-1 m-5">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
           <div class="row">
-            <div class="bloqueNews col-auto card m-5">
+            <div class="bloqueNews card mb-5 p-2">
               <h2 class="card-title">Comentarios</h2>
-              <p class="card-text">Anónimo: ¡100% Recomendado!</p>
-              <p class="card-text">Anónimo: ¡Me ha gustado mucho todo!</p>
-              <p class="card-text">
-                Anónimo: Muy barato para la cantidad que trae.
-              </p>
+              <div class="card-body">
+                <p class="card-text">Anónimo: ¡100% Recomendado!</p>
+                <p class="card-text">Anónimo: ¡Me ha gustado mucho todo!</p>
+                <p class="card-text">
+                  Anónimo: Muy barato para la cantidad que trae.
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div>
-              <a class="bloqueMovil col-auto card m-5" href="pizzasPedidos.html">
-                <img
-                  class="imagenMovil card-img content-image"
-                  src="multimedia/imagenMovil.jpg"
-                />
-                <label class="labelMovil card-text"
-                  >¡LLAME O PIDA ONLINE YA!</label
-                >
-              </a>
-            </div>
+          <div class="row">
+            <a class="bloqueMovil card" href="pizzasPedidos.html">
+              <img
+                class="imagenMovil card-img content-image"
+                src="multimedia/imagenMovil.jpg"
+                alt="imgMovil"
+              />
+              <label class="labelMovil card-text"
+                >¡LLAME O PIDA ONLINE YA!</label
+              >
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <footer class="text-center text-white">
-      <div class="container p-4 m-auto">
-        <section class="">
-          <form action="">
+      <div class="container p-4">
+        <section>
+          <form>
             <div class="row d-flex justify-content-center">
-              <div class="col-auto">
+              <div class="col-auto m-3">
                 <p class="pt-2">
                   <strong>¡Suscríbete con tu correo electrónico!</strong>
                 </p>
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white m-3 mt-auto">
                   <input
                     type="email"
                     id="emailSuscripcion"
@@ -99,10 +142,7 @@
               </div>
 
               <div class="col-auto">
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 mt-auto"
-                >
+                <button type="submit" class="btn btn-outline-light my-3">
                   Suscríbete
                 </button>
               </div>
