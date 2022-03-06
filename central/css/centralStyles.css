@@ -107,6 +107,7 @@ button:hover {
 }
 .bloquePlato {
   background-color: rgb(228, 169, 93);
+  border-radius: 25px;
 }
 .textoPlato {
   background-color: rgb(212, 141, 48);
