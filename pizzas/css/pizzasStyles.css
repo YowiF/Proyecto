@@ -117,6 +117,7 @@ footer {
 }
 .bloquePlato {
   background-color: rgba(201, 98, 29, 0.904);
+  border-radius: 25px;
 }
 .textoPlato {
   background-color: rgba(219, 112, 40, 0.692);
