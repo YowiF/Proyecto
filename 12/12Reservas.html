@@ -67,159 +67,160 @@
       </div>
     </header>
 
-    <div class="contenido contenidoReservas">
-      <div class="bloqueFormulario">
-        <h2>Reserva</h2>
-        <form class="needs-validation" novalidate>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
-              <label for="nombre">Nombre</label>
-              <input
-                type="text"
-                class="form-control cajas"
-                id="nombre"
-                placeholder="Daniel"
-                required
-              />
-            </div>
-
-            <div class="col-md-4 mb-3">
-              <label for="apellidos">Apellidos</label>
-              <input
-                type="text"
-                class="form-control cajas"
-                id="apellidos"
-                placeholder="García Castro"
-                required
-              />
-            </div>
-
-            <div class="col-md-4 mb-3">
-              <label for="numComensales">Número de Comensales</label>
-              <input
-                type="text"
-                class="form-control cajas"
-                id="numComensales"
-                placeholder="4"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
-              <label for="email">Correo electrónico</label>
-              <input
-                type="text"
-                class="form-control cajas"
-                id="email"
-                placeholder="danielgarciacastro8@gmail.com"
-                required
-              />
-            </div>
-
-            <div class="col-md-4 mb-3">
-              <label for="telefono">Teléfono</label>
-              <input
-                type="text"
-                class="form-control cajas"
-                id="telefono"
-                placeholder="684248283"
-                required
-              />
-            </div>
-
-            <div class="col-md-4 mb-3">
-              <label for="fechaReserva">Fecha de Reserva</label>
-              <div class="input-group date" id="datetimepicker1">
+    <section class="contenidoReservas text-center">
+      <div class="row justify-content-center mx-2">
+        <div class="bloqueFormulario card m-3 p-3">
+          <h2 class="card-title">Reserva</h2>
+          <form class="needs-validation card-body" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="nombre">Nombre</label>
                 <input
                   type="text"
                   class="form-control cajas"
-                  id="fechaReserva"
+                  id="nombre"
+                  placeholder="Daniel"
+                  required
                 />
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                </span>
               </div>
-            </div>
-          </div>
 
-          <div class="form-row">
-            <div class="col-md-4 offset-md-2 mb-3">
-              <div class="form-check">
+              <div class="col-md-4 mb-3">
+                <label for="apellidos">Apellidos</label>
                 <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="checkCeliacos"
+                  type="text"
+                  class="form-control cajas"
+                  id="apellidos"
+                  placeholder="García Castro"
+                  required
                 />
-                <label class="form-check-label" for="checkCeliacos">
-                  Comida para celiacos
-                </label>
               </div>
-            </div>
 
-            <div class="offset-md-2 col-md-4 mb-3">
-              <div class="form-check">
+              <div class="col-md-4 mb-3">
+                <label for="numComensales">Número de Comensales</label>
                 <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="checkPrivacidad"
+                  type="text"
+                  class="form-control cajas"
+                  id="numComensales"
+                  placeholder="4"
+                  required
                 />
-                <label class="form-check-label" for="checkPrivacidad">
-                  Política de privacidad
-                </label>
               </div>
             </div>
-          </div>
 
-          <div class="form-row">
-            <div class="col-md-12 offset-lg-3 col-lg-6 offset-lg-3 mb-3">
-              <label for="observaciones">Observaciones</label>
-              <textarea
-                id="observaciones"
-                class="form-control cajas"
-                aria-label="With textarea"
-                placeholder="Escriba sus observaciones ..."
-              ></textarea>
-            </div>
-          </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="email">Correo electrónico</label>
+                <input
+                  type="text"
+                  class="form-control cajas"
+                  id="email"
+                  placeholder="danielgarciacastro8@gmail.com"
+                  required
+                />
+              </div>
 
-          <div class="form-row">
-            <div class="m-auto mb-3">
-              <input type="button" class="btn btn-primary" value="ENVIAR" />
+              <div class="col-md-4 mb-3">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="text"
+                  class="form-control cajas"
+                  id="telefono"
+                  placeholder="684248283"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label for="fechaReserva">Fecha de Reserva</label>
+                <div class="input-group date" id="datetimepicker1">
+                  <input
+                    type="text"
+                    class="form-control cajas"
+                    id="fechaReserva"
+                  />
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-        </form>
+
+            <div class="form-row">
+              <div class="col-md-4 offset-md-1 mb-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkCeliacos"
+                  />
+                  <label class="form-check-label" for="checkCeliacos">
+                    Comida para celiacos
+                  </label>
+                </div>
+              </div>
+
+              <div class="offset-md-2 col-md-4 mb-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkPrivacidad"
+                  />
+                  <label class="form-check-label" for="checkPrivacidad">
+                    Política de privacidad
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 offset-lg-3 col-lg-6 offset-lg-3 mb-3">
+                <label for="observaciones">Observaciones</label>
+                <textarea
+                  id="observaciones"
+                  class="form-control cajas"
+                  aria-label="With textarea"
+                  placeholder="Escriba sus observaciones ..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="m-auto mb-3">
+                <input type="button" class="btn btn-primary" value="ENVIAR" />
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
 
     <footer class="text-center text-white">
-      <div class="container p-4 m-auto">
-        <section class="">
-          <form action="">
+      <div class="container p-4">
+        <section>
+          <form>
             <div class="row d-flex justify-content-center">
-              <div class="col-auto">
+              <div class="col-auto m-3">
                 <p class="pt-2">
                   <strong>¡Suscríbete con tu correo electrónico!</strong>
                 </p>
               </div>
 
               <div class="col-md-5 col-12">
-                <div class="form-outline form-white mb-4">
+                <div class="form-outline form-white m-3 mt-auto">
                   <input
                     type="email"
                     id="emailSuscripcion"
                     class="form-control cajas"
                   />
-                  <label class="form-label" for="emailSuscripcion">E-Mail</label>
+                  <label class="form-label" for="emailSuscripcion"
+                    >E-Mail</label
+                  >
                 </div>
               </div>
 
               <div class="col-auto">
-                <button
-                  type="submit"
-                  class="btn btn-outline-light mb-4 mt-auto"
-                >
+                <button type="submit" class="btn btn-outline-light my-3">
                   Suscríbete
                 </button>
               </div>
