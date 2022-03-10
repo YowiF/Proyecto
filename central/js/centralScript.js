@@ -55,3 +55,7 @@ function ocultartexto() {
     opacity: "0",
   });
 }
+
+$( function() {
+  $( "#fechaReserva" ).datepicker();
+} );

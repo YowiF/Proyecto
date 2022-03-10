@@ -19,6 +19,12 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+      type="text/css"
+    />
+
     <link rel="stylesheet" href="css/12Styles.css" />
   </head>
   <body>
@@ -132,15 +138,12 @@
 
               <div class="col-md-4 mb-3">
                 <label for="fechaReserva">Fecha de Reserva</label>
-                <div class="input-group date" id="datetimepicker1">
+                <div class="input-group date">
                   <input
                     type="text"
                     class="form-control cajas"
                     id="fechaReserva"
                   />
-                  <span class="input-group-addon">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                  </span>
                 </div>
               </div>
             </div>
@@ -347,11 +350,10 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
     type="text/javascript"
   ></script>
+  <script
+    src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+    type="text/javascript"
+  ></script>
 
   <script src="js/12Script.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#datetimepicker1").datetimepicker();
-    });
-  </script>
 </html>
